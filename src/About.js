@@ -31,8 +31,11 @@ function About() {
                             <div className="h-sm-3"></div>
                     </div>
                 </div>
-
+                <div className="bg-white">
+                    <img src="img/index/index-head-bttm.svg" alt="" className="btm" />
+                </div>
             </div>
+
             <div className="about">
                 <div className="container">
                     <div className="row py-5">
@@ -62,7 +65,7 @@ function About() {
                     </div>
                     <div className="row">
                         <div className="offset-lg-3 col-lg-6 col-12">
-                            <img src="img/about/founders.svg" alt="" />
+                            <img src="img/about/founders.png" alt="" />
                         </div>
                     </div>
                     <div className="row">

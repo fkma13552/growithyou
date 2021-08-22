@@ -81,12 +81,12 @@ function GiveToys() {
                                 <div className="form-item">
                                     <label htmlFor="name" className="font-weight-bold">Ім'я та призвіще</label><br />
                                     <input type="text" id="name" name="name" placeholder="Ім'я та призвіще"
-                                           className="w-100" value={name} onChange={handleNameChange} required/>
+                                           className="w-100" value={name} onChange={handleNameChange}/>
                                 </div>
                                 <div className="form-item">
                                     <label htmlFor="tel" className="font-weight-bold">Мобільний номер</label><br />
                                     <input type="tel" id="tel" name="tel" placeholder="+38(___) ___ __ __"
-                                           className="w-100" value={number} onChange={handleNumberChange} required/>
+                                           className="w-100" value={number} onChange={handleNumberChange} />
                                 </div>
                                 <div className="form-item">
                                     <label htmlFor="email" className="font-weight-bold">Електронна адреса</label><br />
@@ -96,7 +96,7 @@ function GiveToys() {
                                 <div className="form-item">
                                     <label className="checkbox-container">Я даю згоду на обробку моїх персональних
                                         данних
-                                        <input type="checkbox" required/>
+                                        <input type="checkbox" />
                                             <span className="checkmark"></span>
                                     </label>
                                 </div>
@@ -106,7 +106,7 @@ function GiveToys() {
 
 
                                     <label htmlFor="viber" className="checkbox-container w-sm-100">Viber
-                                        <input type="radio" id="viber" name="messenger" onChange={handleTelVibChange} required/>
+                                        <input type="radio" id="viber" name="messenger" onChange={handleTelVibChange} />
                                             <span className="radio"></span>
                                     </label>
 

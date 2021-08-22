@@ -1,15 +1,5 @@
-/*@font-face {
-	font-family: 'Space Grotesk';
-	src: url('../fonts/SpaceGrotesk-Regular.ttf');
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Rubik&display=swap');
 
-/*@font-face {
-	font-family: 'Space Grotesk Bold';
-	src: url('../fonts/SpaceGrotesk-Bold.ttf');
-}
-*/
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -396,7 +386,7 @@ nav p {
 		padding: .7rem 1.5rem;
 		min-width: 13rem;
 		font-size: .8rem;
-		margin-right: 0rem;
+		margin-right: 0.3rem;
 	}
 }
 
