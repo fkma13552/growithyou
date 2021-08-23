@@ -164,7 +164,7 @@ function Info() {
                     </div>
                 </div>
                 <div className="text-center py-5">
-                    <Link to={'/aboutus'}><button className="btn btn-filled-yellow font-weight-bold">ДІЗНАТИСЯ БІЛЬШЕ</button></Link>
+                    <Link to={'/about'}><button className="btn btn-filled-yellow font-weight-bold">ДІЗНАТИСЯ БІЛЬШЕ</button></Link>
                 </div>
 
             </div>
