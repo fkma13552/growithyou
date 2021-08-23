@@ -74,7 +74,7 @@ function Header(props) {
                 <div className="lg-nav">
                     <ul>
                         <li className={headerWhite? 'nav-link-purple': 'nav-link'}>
-                            <a href="growithyou.com">Каталог іграшок</a>
+                            <a href="https:/growithyou.com">Каталог іграшок</a>
                         </li>
                         <li className={headerWhite? 'nav-link-purple': 'nav-link'}>
                             <Link to={'/about'} onClick={() => handleRoutingNavbar()}><a href="">Про нас</a></Link>
