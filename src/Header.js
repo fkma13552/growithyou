@@ -19,15 +19,16 @@ function Header(props) {
     const handleToggleNavbar = () => {
 
         changeNavbarOpened(!navbarOpened);
-        if (!navbarOpened){
-            setHeaderWhite(true);
-        }
+	    
+	if (locationOut === '/faq'){
+	    setHeaderWhite(true);
+	}
         else if (navbarOpened){
             setHeaderWhite(false);
         }
-	else if (locationOut === '/faq'){
-	    setHeaderWhite(true);
-	}
+	else if (!navbarOpened){
+            setHeaderWhite(true);
+        }
     }
 
 
