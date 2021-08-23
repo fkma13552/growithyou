@@ -79,7 +79,7 @@ function Info() {
                                 </h2>
                                 <p>Допитливий Енштейн - сто новий відкриттів</p>
                                 <h1 className="text-red py-5">500 грн</h1>
-                                <a href="growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
+                                <a href="https:/www.growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
                             </div>
                         </div>
                         <div className="col-lg-4 col-12 mx-auto">
@@ -90,7 +90,7 @@ function Info() {
                                 </h2>
                                 <p>Винахідливий Тесла - тисяча радісних моментів</p>
                                 <h1 className="text-red py-5">700 грн</h1>
-                                <a href="growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
+                                <a href="https:/www.growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
                             </div>
                         </div>
                         <div className="col-lg-4 col-12 mx-auto">
@@ -101,7 +101,7 @@ function Info() {
                                 </h2>
                                 <p>Сміливий Маск - мільйон підкорених планет</p>
                                 <h1 className="text-red py-5">900 грн</h1>
-                                <a href="growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
+                                <a href="https:/www.growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
                             </div>
                         </div>
                     </div>
