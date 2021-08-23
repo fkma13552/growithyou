@@ -91,7 +91,7 @@ function GiveToys() {
                                 <div className="form-item">
                                     <label htmlFor="email" className="font-weight-bold">Електронна адреса</label><br />
                                     <input type="email" id="email" name="email" placeholder="Електронна адреса"
-                                           className="w-100" value={email} onChange={handleEmailChange} />
+                                           className="w-100" value={email} onChange={handleEmailChange} required/>
                                 </div>
                                 <div className="form-item">
                                     <label className="checkbox-container">Я даю згоду на обробку моїх персональних
@@ -111,7 +111,7 @@ function GiveToys() {
                                     </label>
 
                                     <label htmlFor="telegram" className="checkbox-container w-sm-100">Telegram
-                                        <input type="radio" id="telegram" name="messenger" onChange={handleTelVibChange}/>
+                                        <input type="radio" id="telegram" name="messenger" onChange={handleTelVibChange} required/>
                                             <span className="radio"></span>
                                     </label>
 
