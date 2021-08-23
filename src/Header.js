@@ -25,6 +25,9 @@ function Header(props) {
         else if (navbarOpened){
             setHeaderWhite(false);
         }
+	else if (locationOut === '/faq'){
+	    setHeaderWhite(true);
+	}
     }
 
 
