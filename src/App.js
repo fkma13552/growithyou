@@ -55,7 +55,7 @@ function App() {
             <GiveToys />
           </Route>
         </Switch> 
-      <ScrollToTop>
+      </ScrollToTop>
     </>
   );
 }
