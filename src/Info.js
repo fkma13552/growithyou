@@ -63,7 +63,7 @@ function Info() {
                 </div>
             </div>
             <div className="w-100 bg-white">
-                        <a id="plans"
+                        <a id="plans">
                             <img src="./img/index/plans-hat.svg" alt="" className="hat" />
                         </a>
             </div>
