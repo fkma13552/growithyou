@@ -155,10 +155,10 @@ function About() {
                     <img src="img/index/footer-sm-bg.svg" alt="" className="sm-bg" />
                         <div className="content text-center text-white">
                             <div className="social-icons">
-                                <a href="">
+                                <a href="https://www.instagram.com/growwith__you">
                                     <img src="img/inst.svg" alt="" />
                                 </a>
-                                <a href="">
+                                <a href="https://www.facebook.com/growithyou.official">
                                     <img src="img/fb.svg" alt="" />
                                 </a>
                             </div>
