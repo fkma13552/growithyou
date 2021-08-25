@@ -97,7 +97,7 @@ function Info() {
                             <div className="card my-5">
                                 <img src="./img/index/plan-2.svg" alt="" />
                                 <h2 className="py-3">
-                                    <span className="text-red">5</span> іграшок
+                                    <span className="text-red">7</span> іграшок
                                 </h2>
                                 <p>Сміливий Маск - мільйон підкорених планет</p>
                                 <h1 className="text-red py-5">900 грн</h1>
@@ -296,10 +296,10 @@ function Info() {
                     <img src="img/index/footer-sm-bg.svg" alt="" className="sm-bg" />
                         <div className="content text-center text-white">
                             <div className="social-icons">
-                                <a href="">
+                                <a href="https://www.instagram.com/growwith__you">
                                     <img src="img/inst.svg" alt="" />
                                 </a>
-                                <a href="">
+                                <a href="https://www.facebook.com/growithyou.official">
                                     <img src="img/fb.svg" alt="" />
                                 </a>
                             </div>
