@@ -23,7 +23,7 @@ function About() {
                     <div className="col-lg-6 col-12  order-lg-2 order-md-1">
 
                         <h1 className="text-white text-huge text-center py-5">
-                            Що таке Grow with you?
+                            Що таке Grow With You?
                         </h1>
                     </div>
                     <div className="col-lg-3 col-6  order-lg-3 order-md-3 order-3">
@@ -137,7 +137,7 @@ function About() {
                     <div className="col-md-6 col-12">
                         <div className="mx-auto">
                             <h1 className="text-purple text-huge">
-                                Почни гратися з Grow with you вже сьогодні!
+                                Почни гратися з Grow With You вже сьогодні!
                             </h1>
                             <div className="text-sm-center">
                                 <div className="py-5 buttons">
