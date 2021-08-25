@@ -317,12 +317,12 @@ function Info() {
                                                 Copyright ©2021 Grow With Us. All rights reserved
                                             </div>
                                         </div>
-                                        <div className="col-md-4 col-12">
-                                            <div className="links d-inline-block text-center py-2">
-                                                <a href="" className="text-white px-3">Terms&Conditions</a>
-                                                <a href="" className="text-white px-3">Legal&privacy</a>
-                                            </div>
-                                        </div>
+                                        {/*<div className="col-md-4 col-12">*/}
+                                        {/*    <div className="links d-inline-block text-center py-2">*/}
+                                        {/*        <a href="" className="text-white px-3">Terms&Conditions</a>*/}
+                                        {/*        <a href="" className="text-white px-3">Legal&privacy</a>*/}
+                                        {/*    </div>*/}
+                                        {/*</div>*/}
                                     </div>
                                 </div>
                             </div>
