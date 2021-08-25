@@ -234,6 +234,7 @@ function Info() {
                             </div>
                         </div>
                         <div className="feedback-cards-item">
+                            <div className="h-lg-3"></div>
                             <div className="card my-5 text-purple">
                                 <img src="./img/index/quote-cyan.svg" alt="" className="quote" />
                                 <p className="py-3">Елена Р. <span className="text-muted float-right">3 дні тому</span></p>
