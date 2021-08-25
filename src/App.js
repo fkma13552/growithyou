@@ -7,6 +7,7 @@ import Info from "./Info";
 import About from "./About";
 import Faq from "./Faq";
 import GiveToys from "./GiveToys";
+import ScrollToTop from './ScrollToTop'
 import {useState, useEffect} from 'react'
 import {BrowserRouter as Router, Switch, Route, useLocation} from 'react-router-dom'
 import myFunc from "./jsfront";
@@ -39,20 +40,22 @@ function App() {
   return (
     <>
       <Header compName ={compName} changeCompName={() => setCompName}/>
-      <Switch>
-        <Route exact path={'/'}>
-          <Info />
-        </Route>
-        <Route path = {'/about'}>
-          <About />
-        </Route>
-        <Route path={'/faq'}>
-          <Faq />
-        </Route>
-        <Route path={'/givetoys'}>
-          <GiveToys />
-        </Route>
-      </Switch>
+      <ScrollToTop>
+        <Switch>
+          <Route exact path={'/'}>
+            <Info />
+          </Route>
+          <Route path = {'/about'}>
+            <About />
+          </Route>
+          <Route path={'/faq'}>
+            <Faq />
+          </Route>
+          <Route path={'/givetoys'}>
+            <GiveToys />
+          </Route>
+        </Switch> 
+      <ScrollToTop>
     </>
   );
 }
