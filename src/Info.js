@@ -20,7 +20,7 @@ function Info() {
                                 </h1>
                                 <div className="text-sm-center">
                                     <div className="py-5 buttons">
-                                        <a href="https://www.growithyou.com"><button className="btn btn-filled-white font-weight-bold">ПІДПИСАТИСЯ</button></a>
+                                        <a href="#plans"><button className="btn btn-filled-white font-weight-bold">ПІДПИСАТИСЯ</button></a>
                                         <Link to={'/givetoys'}><button className="btn btn-outlined-pink font-weight-bold">ВІДДАТИ ІГРАШКИ</button></Link>
                                     </div>
                                 </div>
@@ -63,7 +63,9 @@ function Info() {
                 </div>
             </div>
             <div className="w-100 bg-white">
-                <img src="./img/index/plans-hat.svg" alt="" className="hat" />
+                        <a id="plans"
+                            <img src="./img/index/plans-hat.svg" alt="" className="hat" />
+                        </a>
             </div>
             <div className="plans text-center text-purple">
                 <div className="container">
@@ -79,7 +81,7 @@ function Info() {
                                 </h2>
                                 <p>Допитливий Енштейн - сто новий відкриттів</p>
                                 <h1 className="text-red py-5">500 грн</h1>
-                                <a href="https:/www.growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
+                                <a href="https://www.growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
                             </div>
                         </div>
                         <div className="col-lg-4 col-12 mx-auto">
@@ -90,7 +92,7 @@ function Info() {
                                 </h2>
                                 <p>Винахідливий Тесла - тисяча радісних моментів</p>
                                 <h1 className="text-red py-5">700 грн</h1>
-                                <a href="https:/www.growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
+                                <a href="https://www.growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
                             </div>
                         </div>
                         <div className="col-lg-4 col-12 mx-auto">
@@ -101,7 +103,7 @@ function Info() {
                                 </h2>
                                 <p>Сміливий Маск - мільйон підкорених планет</p>
                                 <h1 className="text-red py-5">900 грн</h1>
-                                <a href="https:/www.growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
+                                <a href="https://www.growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
                             </div>
                         </div>
                     </div>
