@@ -117,8 +117,12 @@ function Faq() {
                                 </div>
                                 <div className="col-lg-6 col-12 order-1 order-lg-2 text-right text-sm-center py-5">
                                     <div className="social-icons">
-                                        <img src="img/inst.svg" alt="" />
-                                            <img src="img/fb.svg" alt="" />
+                                        <a href="https://www.instagram.com/growwith__you">
+					    <img src="img/inst.svg" alt="" />
+					</a>
+					<a href="https://www.facebook.com/growithyou.official">
+					    <img src="img/fb.svg" alt="" />
+					</a>
                                     </div>
                                     <div className="contacts text-white py-3">
                                         <p>+380668203974 </p>
