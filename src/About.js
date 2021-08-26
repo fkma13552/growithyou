@@ -23,7 +23,7 @@ function About() {
                     <div className="col-lg-6 col-12  order-lg-2 order-md-1">
 
                         <h1 className="text-white text-huge text-center py-5">
-                            Що таке Grow with you?
+                            Що таке Grow With You?
                         </h1>
                     </div>
                     <div className="col-lg-3 col-6  order-lg-3 order-md-3 order-3">
@@ -100,12 +100,11 @@ function About() {
                             <p>
                                 Світ змінюється супершвидко і багато речей залишаються у минулому.
                                 Так, ми всі звикли купувати, але зараз стає все більш очевидним, що це не завжди найбільш
-                                оптимальний вибір. Пробувати нове - страшно і хвилююче, з іншої сторони - це може змінити твоє життя на краще.
-                                Ну от, ми вже розповіли тобі, чому варто стати частиною Grow With You, сервісу, що прагне:
+                                оптимальний вибір.
                             </p>
                             <p className="py-3">
-                                Ассортимент нашего проката достаточно широк и постоянно расширяется. В нашем прокате Вы
-                                можете взять для своей крохи множество полезных вещей.
+                                Пробувати нове - страшно і хвилююче, з іншої сторони - це може змінити твоє життя на краще.
+                                Ну от, ми вже розповіли тобі, чому варто стати частиною Grow With You, сервісу, що прагне:
                             </p>
                         </div>
                         <div className="col-lg-4 col-12 text-purple">
@@ -138,11 +137,11 @@ function About() {
                     <div className="col-md-6 col-12">
                         <div className="mx-auto">
                             <h1 className="text-purple text-huge">
-                                Почни гратися з Grow with you вже сьогодні!
+                                Почни гратися з Grow With You вже сьогодні!
                             </h1>
                             <div className="text-sm-center">
                                 <div className="py-5 buttons">
-                                    <a href="growithyou.com"><button className="btn btn-filled-purple font-weight-bold">ПІДПИСАТИСЯ</button></a>
+                                    <a href="https://www.growithyou.com"><button className="btn btn-filled-purple font-weight-bold">ПІДПИСАТИСЯ</button></a>
                                     <Link to={'/givetoys'}><button className="btn btn-outlined-pink font-weight-bold">ВІДДАТИ ІГРАШКИ</button></Link>
                                 </div>
                             </div>
@@ -155,10 +154,10 @@ function About() {
                     <img src="img/index/footer-sm-bg.svg" alt="" className="sm-bg" />
                         <div className="content text-center text-white">
                             <div className="social-icons">
-                                <a href="">
+                                <a href="https://www.instagram.com/growwith__you">
                                     <img src="img/inst.svg" alt="" />
                                 </a>
-                                <a href="">
+                                <a href="https://www.facebook.com/growithyou.official">
                                     <img src="img/fb.svg" alt="" />
                                 </a>
                             </div>

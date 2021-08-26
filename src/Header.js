@@ -19,11 +19,15 @@ function Header(props) {
     const handleToggleNavbar = () => {
 
         changeNavbarOpened(!navbarOpened);
-        if (!navbarOpened){
-            setHeaderWhite(true);
-        }
+	    
+	if (locationOut === '/faq'){
+	    setHeaderWhite(true);
+	}
         else if (navbarOpened){
             setHeaderWhite(false);
+        }
+	else if (!navbarOpened){
+            setHeaderWhite(true);
         }
     }
 
@@ -74,7 +78,7 @@ function Header(props) {
                 <div className="lg-nav">
                     <ul>
                         <li className={headerWhite? 'nav-link-purple': 'nav-link'}>
-                            <a href="growithyou.com">Каталог іграшок</a>
+                            <a href="https://www.growithyou.com">Каталог іграшок</a>
                         </li>
                         <li className={headerWhite? 'nav-link-purple': 'nav-link'}>
                             <Link to={'/about'} onClick={() => handleRoutingNavbar()}><a href="">Про нас</a></Link>
@@ -102,7 +106,7 @@ function Header(props) {
                             <Link to={'/'}><a href="">Головна сторінка</a></Link>
                         </li>
                         <li>
-                            <a href="growithyou.com">Каталог іграшок</a>
+                            <a href="https://www.growithyou.com">Каталог іграшок</a>
                         </li>
                         <li>
                             <Link to={'/about'}><a href="">Про нас</a></Link>
