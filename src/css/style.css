@@ -9,10 +9,6 @@
 	font-family: 'Rubik', sans-serif;
 }
 
-h1 {
-	font-family: 'Roboto Mono', monospace;
-}
-
 :root {
 	--white: #F5F4FE;
 	--purple: #443F80;
@@ -41,6 +37,10 @@ a {
 
 p {
 	font-size: 1.1rem;
+}
+
+h1 {
+	font-family: 'Roboto Mono', monospace;
 }
 
 hr {
@@ -97,16 +97,6 @@ hr {
 	opacity: .4;
 }
 
-.text-huge {
-	font-size: calc(2rem + 1vw);
-}
-
-@media screen and (max-width: 575px) {
-	.text-huge {
-		font-size: calc(3rem);
-	}
-}
-
 .text-medium {
 	font-size: 1.4rem;
 	font-family: 'Roboto Mono', monospace;
@@ -121,6 +111,26 @@ hr {
 	.text-sm-center {
 		text-align: center !important;
 	}
+}
+
+.text-huge {
+	font-size: calc(2rem + 1vw);
+}
+
+@media screen and (max-width: 575px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	p, .text-medium {
+		font-size: .9rem;
+	}
+
+	.text-huge {
+		font-size: 1.5rem;
+	}
+
+
 }
 
 
@@ -188,10 +198,12 @@ hr {
 	.d-md {
 		display: inline-block;
 	}
-/*
-	.text-md-center {
-		text-align: center;
-	}*/
+}
+
+@media screen and (max-width: 769px) {
+	.m-top-4 {
+		margin-top: -4rem !important;
+	}
 }
 
 /* NAVBAR */
@@ -312,10 +324,6 @@ nav p {
 		height: 6rem;
 	}
 
-	.text-medium {
-		font-size: 1rem;
-	}
-
 	.h-lg-3 {
 		height: 0;
 	}
@@ -392,19 +400,19 @@ nav p {
 
 @media screen and (max-width: 991px) {
 	.btn {
-		padding: .5rem 1rem;
+		padding: .8rem .5rem;
 		min-width: 10rem;
-		font-size: .5rem;
-		margin-right: .3rem;
+		font-size: .8rem;
+		margin: .25rem;
 	}
 }
 
 @media screen and (max-width: 575px) {
 	.btn {
-		padding: .7rem 1.2rem;
-		min-width: 9rem;
-		font-size: .6rem;
-		margin: .2rem .5rem
+		padding: .8rem 1rem;
+		min-width: 10rem;
+		font-size: .8rem;
+		margin: .2rem .2rem
 	}
 
 	.buttons {
@@ -749,4 +757,22 @@ footer .legals a:hover, footer .links a:hover {
 
 .d-none {
 	display: none !important;
+}
+
+.yellow-star, .char-sm {
+	display: none;
+}
+
+.char-full {
+	display: inline-block;
+}
+
+@media screen and (max-width:  768px) {
+	.yellow-star, .char-sm {
+		display: inline-block;
+	}
+
+	.char-full {
+		display: none;
+	}
 }

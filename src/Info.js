@@ -15,19 +15,27 @@ function Info() {
                     <div className="row">
                         <div className="col-md-6 col-12">
                             <div className="my-5">
-                                <h1 className="text-white text-huge">
-                                    Доступ до 200 іграшок всього за 500 гривень на місяць
-                                </h1>
+                                <div className="row">
+                                    <div className="col-10 col-lg-12">
+                                        <h1 className="text-white text-huge">
+                                            Доступ до 200 іграшок всього за 500 гривень на місяць
+                                        </h1>
+                                    </div>
+                                    <div className="col-2 yellow-star my-auto">
+                                        <img src="./img/index/yellow-star.svg" alt="" />
+                                    </div>
+                                </div>
                                 <div className="text-sm-center">
-                                    <div className="py-5 buttons">
+                                    <div className="py-4 buttons">
                                         <a href="#plans"><button className="btn btn-filled-white font-weight-bold">ПІДПИСАТИСЯ</button></a>
                                         <Link to={'/givetoys'}><button className="btn btn-outlined-pink font-weight-bold">ВІДДАТИ ІГРАШКИ</button></Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6 col-12">
-                            <img src="./img/index/header-char.svg" alt="" />
+                        <div className="col-md-6 col-12 my-auto">
+                            <img src="./img/index/header-char.svg" alt="" className="char-full" />
+                            <img src="./img/index/header-sm-char.svg" alt="" className="char-sm" />
                         </div>
                     </div>
                 </div>
@@ -41,21 +49,21 @@ function Info() {
                     <div className="row">
                         <div className="col-md-4 col-6">
                             <img src="./img/index/how-it-works-1.svg" alt="" />
-                            <p className="px-4 text-medium">
+                            <p className="px-2 text-medium">
                                 Обирай план підписки та іграшки для малюка
                             </p>
                         </div>
                         <div className="col-md-4 col-6">
                             <div className="h-6"></div>
-                            <div className="h-sm-6"></div>
+
                             <img src="./img/index/how-it-works-2.svg" alt="" />
-                            <p className="px-4 text-medium">
+                            <p className="px-2 text-medium">
                                 Грайтесь поки вони не набриднуть
                             </p>
                         </div>
-                        <div className="col-md-4 col-6">
+                        <div className="col-md-4 col-6 m-top-4">
                             <img src="./img/index/how-it-works-3.svg" alt="" />
-                            <p className="px-4 text-medium">
+                            <p className="px-2 text-medium">
                                 Повертайте вже непотрібні та обирайте нові
                             </p>
                         </div>
@@ -70,7 +78,8 @@ function Info() {
             <div className="plans text-center text-purple">
                 <div className="container">
                     <div className="h-3"></div>
-                    <h1 className="text-white py-5">Плани підписки</h1>
+                    <h1 className="text-white py-2">Плани підписки</h1>
+                    <div className="h-3"></div>
                     <div className="h-3"></div>
                     <div className="row card-items">
                         <div className="col-lg-4 col-12 mx-auto">
@@ -80,7 +89,7 @@ function Info() {
                                     <span className="text-cyan">3</span> іграшки
                                 </h2>
                                 <p>Допитливий Енштейн - сто новий відкриттів</p>
-                                <h1 className="text-red py-5">500 грн</h1>
+                                <h1 className="text-red py-3">500 грн</h1>
                                 <a href="https://www.growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
                             </div>
                         </div>
@@ -91,7 +100,7 @@ function Info() {
                                     <span className="text-pink">5</span> іграшок
                                 </h2>
                                 <p>Винахідливий Тесла - тисяча радісних моментів</p>
-                                <h1 className="text-red py-5">700 грн</h1>
+                                <h1 className="text-red py-3">700 грн</h1>
                                 <a href="https://www.growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
                             </div>
                         </div>
@@ -102,7 +111,7 @@ function Info() {
                                     <span className="text-red">7</span> іграшок
                                 </h2>
                                 <p>Сміливий Маск - мільйон підкорених планет</p>
-                                <h1 className="text-red py-5">900 грн</h1>
+                                <h1 className="text-red py-3">900 грн</h1>
                                 <a href="https://www.growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
                             </div>
                         </div>
@@ -120,7 +129,7 @@ function Info() {
                             <img src="./img/index/pros-1.svg" alt="" />
                         </div>
                         <div className="col-lg-5 col-md-7 col-12 my-auto">
-                            <p className="font-weight-bold py-2">Економія часу та грошей</p>
+                            <p className="font-weight-bold py-4">Економія часу та грошей</p>
                             <p>
                                 Витрачати час та гроші на купівлю іграшки, якими дитина перестане цікавитись за кілька днів?
                                 Звучить не надто казково:( Ми ж пропонуємо доступ до 200 іграшок всього за 3 кліки та 500 гривень на місяць
@@ -129,7 +138,7 @@ function Info() {
                     </div>
                     <div className="row">
                         <div className="offset-lg-1 col-lg-5 col-md-7 my-auto  order-2 order-md-2">
-                            <p className="font-weight-bold py-2">Ранній розвиток</p>
+                            <p className="font-weight-bold py-4">Ранній розвиток</p>
                             <p>
                                 Хто ж не хоче виростити майбутніх Кюрі, Ломоносова або Сікорського?
                                 Ми розуміємо важливість навчання малюків через гру, тому консультуємось з експертами щодо підбору іграшок, спрямованих на ранній розвиток
@@ -144,7 +153,7 @@ function Info() {
                             <img src="./img/index/pros-3.svg" alt="" />
                         </div>
                         <div className="col-lg-5 col-md-7 col-12 my-auto">
-                            <p className="font-weight-bold py-2">Порятунок планети</p>
+                            <p className="font-weight-bold py-4">Порятунок планети</p>
                             <p>
                                 Майбутнє важливе! Користування наших сервісом допоможе тобі не лише звільнити простір у квартирі,
                                 але і скоротити свої викиди СО2 у чотири рази. Зелена планета для малюка!
@@ -153,7 +162,7 @@ function Info() {
                     </div>
                     <div className="row">
                         <div className="offset-lg-1 col-lg-5 col-md-7 my-auto  order-2 order-md-2">
-                            <p className="font-weight-bold py-2">Безпечність іграшок</p>
+                            <p className="font-weight-bold py-4">Безпечність іграшок</p>
                             <p>
                                 Для мам - безпека понад усе (особливо у наші непевні часи)!
                                 Наші іграшки дезінфікуються спеціальними засобами, що безпечні для дітей,
