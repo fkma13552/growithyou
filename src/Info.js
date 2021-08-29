@@ -18,7 +18,7 @@ function Info() {
                                 <div className="row">
                                     <div className="col-10 col-lg-12">
                                         <h1 className="text-white text-huge">
-                                            Доступ до 200 іграшок всього за 500 гривень на місяць
+                                            Щомісячна підписка на іграшки для вашого малюка
                                         </h1>
                                     </div>
                                     <div className="col-2 yellow-star my-auto">
@@ -27,7 +27,7 @@ function Info() {
                                 </div>
                                 <div className="text-sm-center">
                                     <div className="py-4 buttons">
-                                        <a href="#plans"><button className="btn btn-filled-white font-weight-bold">ПІДПИСАТИСЯ</button></a>
+                                        <a href="/#plans"><button className="btn btn-filled-white font-weight-bold">ПІДПИСАТИСЯ</button></a>
                                         <Link to={'/givetoys'}><button className="btn btn-outlined-pink font-weight-bold">ВІДДАТИ ІГРАШКИ</button></Link>
                                     </div>
                                 </div>
@@ -88,7 +88,7 @@ function Info() {
                                 <h2 className="py-3">
                                     <span className="text-cyan">3</span> іграшки
                                 </h2>
-                                <p>Допитливий Енштейн - сто новий відкриттів</p>
+                                <p>Допитливий Енштейн - сто нових відкриттів</p>
                                 <h1 className="text-red py-3">500 грн</h1>
                                 <a href="https://www.growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
                             </div>
@@ -155,8 +155,8 @@ function Info() {
                         <div className="col-lg-5 col-md-7 col-12 my-auto">
                             <p className="font-weight-bold py-4">Порятунок планети</p>
                             <p>
-                                Майбутнє важливе! Користування наших сервісом допоможе тобі не лише звільнити простір у квартирі,
-                                але і скоротити свої викиди СО2 у чотири рази. Зелена планета для малюка!
+                                Користування нашим сервісом допоможе тобі не лише звільнити простір у квартирі,
+                                але і скоротити свої викиди СО2 у чотири рази. Зелена планетка для малюка!
                             </p>
                         </div>
                     </div>
@@ -164,9 +164,8 @@ function Info() {
                         <div className="offset-lg-1 col-lg-5 col-md-7 my-auto  order-2 order-md-2">
                             <p className="font-weight-bold py-4">Безпечність іграшок</p>
                             <p>
-                                Для мам - безпека понад усе (особливо у наші непевні часи)!
-                                Наші іграшки дезінфікуються спеціальними засобами, що безпечні для дітей,
-                                а також проходять процедуру кварцювання, озонування та піддаються еко-хімчистці
+                                Для мам - безпека понад усе (особливо у наші непевні часи)! Наші іграшки дезінфікуються
+                                безпечними для дітей засобами, а також проходять процедуру кварцювання, озонування та піддаються еко-хімчистці.
                             </p>
                         </div>
                         <div className="col-lg-5 col-md-5 order-1 order-md-2">

@@ -43,8 +43,7 @@ function Faq() {
                                 <img src="img/arrow-down.svg" alt="" className="d-inline-block float-right arrow-down" />
                             </div>
                             <div className="faq-item-body d-none">
-                                <p>Підписку можна оформити на сайті, обрав потрібні вам іграшки та заливши свою електронну адресу. <br />
-                                    Оплата здійснюється кожен місяць на картковий рахунок, дані якого будуть міститися в електронному листі.</p>
+                                <p>Підписку можна оформити на сайті, обрав потрібні вам іграшки та залишивши свою електронну адресу. </p>
                             </div>
                         </div>
                         <div className="faq-item text-purple">
@@ -79,7 +78,7 @@ function Faq() {
                                 <img src="img/arrow-down.svg" alt="" className="d-inline-block float-right arrow-down" />
                             </div>
                             <div className="faq-item-body d-none">
-                                <p>Ви можете продовжувати користуватися нею та оновити решту іграшок АБО викупити її у нас за ціною -30% від ретейл ціни</p>
+                                <p>Ви можете продовжувати користуватися нею та оновити решту іграшок АБО викупити її у нас за ціною -30% від роздрібної ціни</p>
                             </div>
                         </div>
                         <div className="faq-item text-purple">
