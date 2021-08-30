@@ -94,33 +94,33 @@ function About() {
                         </div>
                     </div>
 
-                    <div className="row">
-                        <div className="offset-lg-2 col-lg-4 col-12 text-purple">
-                            <p className="font-weight-bold py-3">Наші цілі</p>
-                            <p>
-                                Світ змінюється супершвидко і багато речей залишаються у минулому.
-                                Так, ми всі звикли купувати, але зараз стає все більш очевидним, що це не завжди найбільш
-                                оптимальний вибір.
-                            </p>
-                            <p className="py-3">
-                                Пробувати нове - страшно і хвилююче, з іншої сторони - це може змінити твоє життя на краще.
-                                Ну от, ми вже розповіли тобі, чому варто стати частиною Grow With You, сервісу, що прагне:
-                            </p>
-                        </div>
-                        <div className="col-lg-4 col-12 text-purple">
-                            <p className="text-white py-3">Наші цілі</p>
-                            <p><span className="font-weight-bold">1.</span>
-                                Зробити дітей щасливими
-                            </p>
-                            <p className="py-3"><span className="font-weight-bold">2.</span>
-                                Полегшити життя мамам
-                            </p>
-                            <p><span className="font-weight-bold">3.</span>
-                                Зберегти планету зеленою
-                            </p>
-                            <div className="h-sm-3"></div>
-                        </div>
-                    </div>
+                    {/*<div className="row">*/}
+                    {/*    <div className="offset-lg-2 col-lg-4 col-12 text-purple">*/}
+                    {/*        <p className="font-weight-bold py-3">Наші цілі</p>*/}
+                    {/*        <p>*/}
+                    {/*            Світ змінюється супершвидко і багато речей залишаються у минулому.*/}
+                    {/*            Так, ми всі звикли купувати, але зараз стає все більш очевидним, що це не завжди найбільш*/}
+                    {/*            оптимальний вибір.*/}
+                    {/*        </p>*/}
+                    {/*        <p className="py-3">*/}
+                    {/*            Пробувати нове - страшно і хвилююче, з іншої сторони - це може змінити твоє життя на краще.*/}
+                    {/*            Ну от, ми вже розповіли тобі, чому варто стати частиною Grow With You, сервісу, що прагне:*/}
+                    {/*        </p>*/}
+                    {/*    </div>*/}
+                    {/*    <div className="col-lg-4 col-12 text-purple">*/}
+                    {/*        <p className="text-white py-3">Наші цілі</p>*/}
+                    {/*        <p><span className="font-weight-bold">1.</span>*/}
+                    {/*            Зробити дітей щасливими*/}
+                    {/*        </p>*/}
+                    {/*        <p className="py-3"><span className="font-weight-bold">2.</span>*/}
+                    {/*            Полегшити життя мамам*/}
+                    {/*        </p>*/}
+                    {/*        <p><span className="font-weight-bold">3.</span>*/}
+                    {/*            Зберегти планету зеленою*/}
+                    {/*        </p>*/}
+                    {/*        <div className="h-sm-3"></div>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
             </div>
 
