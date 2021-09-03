@@ -1,0 +1,140 @@
+{
+    "navbar": {
+        "catalog": "Toys catalog",
+        "about": "About us",
+        "questions": "Popular questions",
+        "close": "Close",
+        "menu": "Menu",
+        "mainpage": "Main page",
+        "cart": "Cart"
+    },
+
+    "index": {
+        "title": "Щомісячна підписка на іграшки для вашого малюка",
+        "mainButtons": {
+            "sub": "SUBSCRIBE",
+            "give": "GIVE AWAY TOYS",
+            "findMore": "LEARN MORE"
+        },
+
+        "howItWorks": {
+            "title": "How it works?",
+            "desc1": "Choose the subscription plan and toys for your kid",
+            "desc2": "Play as long as needed, then return to us",
+            "desc3": "And all over again"
+        },
+
+        "plans": {
+            "title": "Subscription plans",
+            "plant": "toys",
+            "plan1": {
+                "desc": "Curious Einstein - one hundred new discoveries",
+                "price": "15$"
+            },
+            "plan2": {
+                "desc": "Inventive Tesla - a thousand happy moments",
+                "price": "25$"
+            },
+            "plan3": {
+                "desc": "Courageous Musk - a million conquered planets",
+                "price": "35$"
+            }
+        },
+
+        "whyUs": {
+            "title": "Why use Grow With You?",
+            "one": {
+                "title": "Saving time and money",
+                "desc": "Spend time and money on buying toys that your child will forget in a few days? Sounds not too fabulous :( We offer access to 200 toys in just 3 clicks and 15$ per month."
+            },
+            "two": {
+                "title": "Early development",
+                "desc": "Who does not want to raise future Curie, Lomonosov, or Sikorsky? We understand the importance of teaching kids through play, so we consult with experts on the selection of toys for early development"
+            },
+            "three": {
+                "title": "Saving the planet",
+                "desc": "Using our service will help you not only get rid of outgrown or neglected toys cluttering your home, but also to reduce your CO2 emissions by four times. Green planet for the baby!"
+            },
+            "four": {
+                "title": "The safety of our toys",
+                "desc": "For mothers - safety is above all (especially in our uncertain times)! Our toys are disinfected, as well as undergo quartz, ozonation, and eco-dry cleaning."
+            }
+        },
+        "mumSay": {
+            "title": "What mothers say",
+            "scrollTip": "Scroll to see more reviews",
+            "one": {
+                "name": "Svetlana K.",
+                "time": "7 days ago",
+                "child": "son Bohdan, 5 years old",
+                "text": "So happy to find out about such service! Already received toys, everything is super nice and of great quality!"
+            },
+            "two": {
+                "name": "Elena R.",
+                "time": "3 days ago",
+                "child": "daughter Aglaya, 4 years old",
+                "text": "I'm very happy with our subscription. My daughter is so surprised to receive new toys every month."
+            },
+            "three": {
+                "name": "Olga B.",
+                "time": "4 days ago",
+                "child": "son Yaroslav, 4 years old",
+                "text": "We are delighted! I already think what to order for the next month!"
+            },
+            "four": {
+                "name": "Lisa V.",
+                "time": "3 days ago",
+                "child": "son Mark, 3 months",
+                "text": "Honestly, I am amazed by your idea;) The toys are great, new, clean! I want to order new ones and try them all!"
+            }
+        }
+    },
+
+    "about": {
+        "title": "What is Grow With You?",
+        "description": "Grow With You is a service created to simplify a mother's life. We want to relieve you of the worries of constantly looking for new toys for your baby and the headache where to keep the unneeded ones.",
+        "why1": "Why the subscription - you may wonder. The child constantly needs to update toys: it grows, and from mobiles and teethers quickly moves to sorters and puzzles. We help you find all the toys that are best for your baby's early development.",
+        "why2": "Why the subscription for renting toys is the next question. Of course, not all toys become \"favorite\" for your child: and if the sheep becomes a constant companion for the baby, the pyramid and the interactive cube will fall into disfavor in a month or two.",
+        "howItStarted": {
+            "title": "How did it all start?",
+            "first": "We've promoted responsible consumption and production as a public organization. After researching the problems in these areas, we've wanted to do something that would help people and make their lives more environmentally friendly.",
+            "second": "Meanwhile, we've talked to mothers and learned that they do not always have time to look for toys and need to buy them constantly: the child grows, develops, and learns about the world through games. At the same time, the period of use of toys is rather short, and then mum needs to think where to store / to whom to give already unneeded toys.",
+            "third": "Thus was born the idea of a subscription service for children's toys, which allows baby to try many different toys and find the ones he likes. For the mother is it the chance not to spend time and effort on selecting toys and deciding their future."
+        },
+        "goal": "Everything is simple. We want to change the traditional model of kid's toys consumption, which will increase the number of cycles of their use by 4 times."
+
+    },
+
+    "faq": {
+        "title": "",
+        "question1": {
+            "title": "",
+            "ans": ""
+        },
+        "question2": {
+            "title": "",
+            "ans": ""
+        },
+        "question3": {
+            "title": "",
+            "ans": ""
+        },
+        "question4": {
+            "title": "",
+            "ans": ""
+        },
+        "question5": {
+            "title": "",
+            "ans": ""
+        }
+    },
+
+    "footer": {
+        "title": "Start playing with Grow With You now!",
+        "sub": "GET STARTED",
+        "give": "GIVE AWAY TOYS",
+        "tel": "+380668203974",
+        "mail": "growwithyou.subscription@gmail.com"
+    }
+
+}

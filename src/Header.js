@@ -1,11 +1,14 @@
 import React, {useEffect, useState} from 'react'
-import {Link, useLocation} from 'react-router-dom'
+import {Link,  useLocation} from 'react-router-dom'
 import myFunc from "./jsfront";
+import {useTranslation} from "react-i18next";
 
-function Header(props) {
+function Header() {
 
+    const {t, i18n} = useTranslation();
     const [headerWhite, setHeaderWhite] = useState(false);
     const [navbarOpened, changeNavbarOpened] = useState(false);
+    let domain = window.location.hostname;
     let locationOut = useLocation().pathname;
 
     useEffect(() => {
@@ -34,6 +37,7 @@ function Header(props) {
 
     const handleRoutingNavbar = () => {
 
+        console.log(domain)
         let location = locationOut;
 
         if (location === '/faq'){
@@ -60,11 +64,11 @@ function Header(props) {
 				<span className={navbarOpened ? "d-none" : "open-menu"}>
                     <img src="img/menu-dark.svg" alt="" className={headerWhite ? '' :'d-none'}/>
 					<img src={"./img/menu.svg"} alt="" className={headerWhite ? 'd-none' : ''}/><br />
-					<p className={headerWhite ? 'text-purple' :''} > Меню </p>
+					<p className={headerWhite ? 'text-purple' :''} > {t("navbar.menu")} </p>
 				</span>
                 <span className={navbarOpened ? "close-menu" : "d-none"}>
 					<img src="./img/close-menu.svg" alt="" /><br />
-					<p className="text-purple">Закрити</p>
+					<p className="text-purple">{t("navbar.close")}</p>
 				</span>
                 </div>
                 <div className="navbar-logo">
@@ -78,13 +82,13 @@ function Header(props) {
                 <div className="lg-nav">
                     <ul>
                         <li className={headerWhite? 'nav-link-purple': 'nav-link'}>
-                            <a href="https://www.growithyou.com">Каталог іграшок</a>
+                            <a href="https://www.growithyou.com">{t("navbar.catalog")}</a>
                         </li>
                         <li className={headerWhite? 'nav-link-purple': 'nav-link'}>
-                            <Link to={'/about'} onClick={() => handleRoutingNavbar()}><a href="">Про нас</a></Link>
+                            <Link to={'/about'} onClick={() => handleRoutingNavbar()}><a href="">{t("navbar.about")}</a></Link>
                         </li>
                         <li className={headerWhite ? 'nav-link-purple': 'nav-link'}>
-                            <Link to={'/faq'} onClick={()=>handleRoutingNavbar()}><a href="">Популярні запитання</a></Link>
+                            <Link to={'/faq'} onClick={()=>handleRoutingNavbar()}><a href="">{t("navbar.questions")}</a></Link>
                         </li>
                     </ul>
                 </div>
@@ -94,7 +98,7 @@ function Header(props) {
                     <img src="./img/black-bag.svg" alt="" className={headerWhite ? "d-none bag-light" : "d-none"} />
                     <img src="img/bag-dark.svg" alt="" className={headerWhite ? "bag-dark  d-lg" : "d-none" }/>
                     <img src="img/black-bag.svg" alt="" className={headerWhite ? "d-sm" : "d-none"} /><br />
-                    <p className={headerWhite ? "d-sm text-purple" : "d-sm text-white" }>Кошик</p>
+                    <p className={headerWhite ? "d-sm text-purple" : "d-sm text-white" }>{t("navbar.cart")}</p>
 
                 </div>
             </div>
@@ -103,16 +107,16 @@ function Header(props) {
                 <div className="container">
                     <ul>
                         <li>
-                            <Link to={'/'}><a href="">Головна сторінка</a></Link>
+                            <Link to={'/'}><a href="">{t("navbar.mainpage")}</a></Link>
                         </li>
                         <li>
-                            <a href="https://www.growithyou.com">Каталог іграшок</a>
+                            <a href="https://www.growithyou.com">{t("navbar.catalog")}</a>
                         </li>
                         <li>
-                            <Link to={'/about'}><a href="">Про нас</a></Link>
+                            <Link to={'/about'}><a href="">{t("navbar.about")}</a></Link>
                         </li>
                         <li>
-                            <Link to={'/faq'} onClick={() => handleRoutingNavbarMini()}><a href="">Популярні запитання</a></Link>
+                            <Link to={'/faq'} onClick={() => handleRoutingNavbarMini()}><a href="">{t("navbar.questions")}</a></Link>
                         </li>
                     </ul>
                 </div>

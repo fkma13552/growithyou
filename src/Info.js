@@ -1,9 +1,13 @@
 import {useEffect} from 'react'
 import myFunc from './jsfront/index'
 import {Link} from 'react-router-dom'
+import {useTranslation} from "react-i18next";
 
 
 function Info() {
+
+    const {t, i18n} = useTranslation();
+
     useEffect(() => {
             myFunc();
         });
@@ -18,7 +22,7 @@ function Info() {
                                 <div className="row">
                                     <div className="col-10 col-lg-12">
                                         <h1 className="text-white text-huge">
-                                            Щомісячна підписка на іграшки для вашого малюка
+                                            {t("index.title")}
                                         </h1>
                                     </div>
                                     <div className="col-2 yellow-star my-auto">
@@ -27,8 +31,8 @@ function Info() {
                                 </div>
                                 <div className="text-sm-center">
                                     <div className="py-4 buttons">
-                                        <a href="https://growithyou.club/#plans"><button className="btn btn-filled-white font-weight-bold">ПІДПИСАТИСЯ</button></a>
-                                        <Link to={'/givetoys'}><button className="btn btn-outlined-pink font-weight-bold">ВІДДАТИ ІГРАШКИ</button></Link>
+                                        <a href="https://growithyou.club/#plans"><button className="btn btn-filled-white font-weight-bold">{t("index.mainButtons.sub")}</button></a>
+                                        <Link to={'/givetoys'}><button className="btn btn-outlined-pink font-weight-bold">{t("index.mainButtons.give")}</button></Link>
                                     </div>
                                 </div>
                             </div>
@@ -40,17 +44,17 @@ function Info() {
                     </div>
                 </div>
                 <div className="w-100 bg-white">
-                    <img src="./img/index/index-head-bttm.svg" alt="" class="btm" />
+                    <img src="./img/index/index-head-bttm.svg" alt="" className="btm" />
                 </div>
             </div>
             <div className="how-it-works text-center text-purple">
                 <div className="container py-5">
-                    <h1>Як це працює?</h1>
+                    <h1>{t("index.howItWorks.title")}</h1>
                     <div className="row">
                         <div className="col-md-4 col-6">
                             <img src="./img/index/how-it-works-1.svg" alt="" />
                             <p className="px-2 text-medium">
-                                Обирай план підписки та іграшки для малюка
+                                {t("index.howItWorks.desc1")}
                             </p>
                         </div>
                         <div className="col-md-4 col-6">
@@ -58,13 +62,13 @@ function Info() {
 
                             <img src="./img/index/how-it-works-2.svg" alt="" />
                             <p className="px-2 text-medium">
-                                Грайтесь поки вони не набриднуть
+                                {t("index.howItWorks.desc2")}
                             </p>
                         </div>
                         <div className="col-md-4 col-6 m-top-4">
                             <img src="./img/index/how-it-works-3.svg" alt="" />
                             <p className="px-2 text-medium">
-                                Повертайте вже непотрібні та обирайте нові
+                                {t("index.howItWorks.desc3")}
                             </p>
                         </div>
                     </div>
@@ -78,7 +82,7 @@ function Info() {
             <div className="plans text-center text-purple">
                 <div className="container">
                     <div className="h-3"></div>
-                    <h1 className="text-white py-2">Плани підписки</h1>
+                    <h1 className="text-white py-2">{t("index.plans.title")}</h1>
                     <div className="h-3"></div>
                     <div className="h-3"></div>
                     <div className="row card-items">
@@ -86,33 +90,33 @@ function Info() {
                             <div className="card my-5">
                                 <img src="./img/index/plan-3.svg" alt="" />
                                 <h2 className="py-3">
-                                    <span className="text-cyan">3</span> іграшки
+                                    <span className="text-cyan">3</span> {t("index.plans.toysPlur1")}
                                 </h2>
-                                <p>Допитливий Енштейн - сто нових відкриттів</p>
-                                <h1 className="text-red py-3">500 грн</h1>
-                                <a href="https://www.growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
+                                <p>{t("index.plans.plan1.desc")}</p>
+                                <h1 className="text-red py-3">{t("index.plans.plan1.price")}</h1>
+                                <a href="https://www.growithyou.com"><button className="btn btn-filled-purple">{t("index.mainButtons.sub")}</button></a>
                             </div>
                         </div>
                         <div className="col-lg-4 col-12 mx-auto">
                             <div className="card my-5">
                                 <img src="./img/index/plan-1.svg" alt="" />
                                 <h2 className="py-3">
-                                    <span className="text-pink">5</span> іграшок
+                                    <span className="text-pink">5</span> {t("index.plans.toysPlur2")}
                                 </h2>
-                                <p>Винахідливий Тесла - тисяча радісних моментів</p>
-                                <h1 className="text-red py-3">700 грн</h1>
-                                <a href="https://www.growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
+                                <p>{t("index.plans.plan2.desc")}</p>
+                                <h1 className="text-red py-3">{t("index.plans.plan2.price")}</h1>
+                                <a href="https://www.growithyou.com"><button className="btn btn-filled-purple">{t("index.mainButtons.sub")}</button></a>
                             </div>
                         </div>
                         <div className="col-lg-4 col-12 mx-auto">
                             <div className="card my-5">
                                 <img src="./img/index/plan-2.svg" alt="" />
                                 <h2 className="py-3">
-                                    <span className="text-red">7</span> іграшок
+                                    <span className="text-red">7</span> {t("index.plans.toysPlur2")}
                                 </h2>
-                                <p>Сміливий Маск - мільйон підкорених планет</p>
-                                <h1 className="text-red py-3">900 грн</h1>
-                                <a href="https://www.growithyou.com"><button className="btn btn-filled-purple">ПІДПИСАТИСЬ</button></a>
+                                <p>{t("index.plans.plan3.desc")}</p>
+                                <h1 className="text-red py-3">{t("index.plans.plan3.price")}</h1>
+                                <a href="https://www.growithyou.com"><button className="btn btn-filled-purple">{t("index.mainButtons.sub")}</button></a>
                             </div>
                         </div>
                     </div>
@@ -123,25 +127,23 @@ function Info() {
             </div>
             <div className="pros text-purple">
                 <div className="container">
-                    <h1 className="py-5 text-center">Чому ми?</h1>
+                    <h1 className="py-5 text-center">{t("index.whyUs.title")}</h1>
                     <div className="row">
                         <div className="offset-lg-1 col-lg-5 col-md-5 col-12">
                             <img src="./img/index/pros-1.svg" alt="" />
                         </div>
                         <div className="col-lg-5 col-md-7 col-12 my-auto">
-                            <p className="font-weight-bold py-4">Економія часу та грошей</p>
+                            <p className="font-weight-bold py-4">{t("index.whyUs.one.title")}</p>
                             <p>
-                                Витрачати час та гроші на купівлю іграшки, якими дитина перестане цікавитись за кілька днів?
-                                Звучить не надто казково:( Ми ж пропонуємо доступ до 200 іграшок всього за 3 кліки та 500 гривень на місяць
+                                {t("index.whyUs.one.desc")}
                             </p>
                         </div>
                     </div>
                     <div className="row">
                         <div className="offset-lg-1 col-lg-5 col-md-7 my-auto  order-2 order-md-2">
-                            <p className="font-weight-bold py-4">Ранній розвиток</p>
+                            <p className="font-weight-bold py-4">{t("index.whyUs.two.title")}</p>
                             <p>
-                                Хто ж не хоче виростити майбутніх Кюрі, Ломоносова або Сікорського?
-                                Ми розуміємо важливість навчання малюків через гру, тому консультуємось з експертами щодо підбору іграшок, спрямованих на ранній розвиток
+                                {t("index.whyUs.two.desc")}
                             </p>
                         </div>
                         <div className="col-lg-5 col-md-5 order-1 order-md-2">
@@ -153,19 +155,17 @@ function Info() {
                             <img src="./img/index/pros-3.svg" alt="" />
                         </div>
                         <div className="col-lg-5 col-md-7 col-12 my-auto">
-                            <p className="font-weight-bold py-4">Порятунок планети</p>
+                            <p className="font-weight-bold py-4">{t("index.whyUs.three.title")}</p>
                             <p>
-                                Користування нашим сервісом допоможе тобі не лише звільнити простір у квартирі,
-                                але і скоротити свої викиди СО2 у чотири рази. Зелена планетка для малюка!
+                                {t("index.whyUs.three.desc")}
                             </p>
                         </div>
                     </div>
                     <div className="row">
                         <div className="offset-lg-1 col-lg-5 col-md-7 my-auto  order-2 order-md-2">
-                            <p className="font-weight-bold py-4">Безпечність іграшок</p>
+                            <p className="font-weight-bold py-4">{t("index.whyUs.four.title")}</p>
                             <p>
-                                Для мам - безпека понад усе (особливо у наші непевні часи)! Наші іграшки дезінфікуються
-                                безпечними для дітей засобами, а також проходять процедуру кварцювання, озонування та піддаються еко-хімчистці.
+                                {t("index.whyUs.four.desc")}
                             </p>
                         </div>
                         <div className="col-lg-5 col-md-5 order-1 order-md-2">
@@ -174,7 +174,7 @@ function Info() {
                     </div>
                 </div>
                 <div className="text-center py-5">
-                    <Link to={'/about'}><button className="btn btn-filled-yellow font-weight-bold">ДІЗНАТИСЯ БІЛЬШЕ</button></Link>
+                    <Link to={'/about'}><button className="btn btn-filled-yellow font-weight-bold">{t("index.mainButtons.findMore")}</button></Link>
                 </div>
 
             </div>
@@ -183,18 +183,18 @@ function Info() {
             </div>
             <div className="feedback">
                 <div className="container">
-                    <h1 className="text-white text-center py-5">Наші клієнти кажуть</h1>
-                    <p className="text-white text-muted text-center">Гортай, щоб побачити більше відгуків</p>
+                    <h1 className="text-white text-center py-5">{t("index.mumSay.title")}</h1>
+                    <p className="text-white text-muted text-center">{t("index.mumSay.scrollTip")}</p>
                     <div className="feedback-cards">
                         <div className="feedback-cards-item">
                             <div className="card my-5 text-purple">
                                 <img src="./img/index/quote-red.svg" alt="" className="quote" />
-                                <p className="py-3">Ольга Б.<span className="text-muted float-right">7 днів тому</span></p>
+                                <p className="py-3">{t("index.mumSay.one.name")} <span className="text-muted float-right">{t("index.mumSay.one.time")}</span></p>
                                 <p className="font-weight-bold">
-                                    син Ярослав, 4 роки 
+                                    {t("index.mumSay.one.child")}
                                 </p>
                                 <p className="py-3">
-                                    Ми в захваті! Вже думаю, що замовляти сину наступного місяця!
+                                    {t("index.mumSay.one.text")}
                                 </p>
                                 <div className="rate">
                                     <img src="./img/index/star.svg" alt="" />
@@ -208,12 +208,12 @@ function Info() {
                             <div className="h-lg-3"></div>
                             <div className="card my-5 text-purple">
                                 <img src="./img/index/quote-pink.svg" alt="" className="quote" />
-                                <p className="py-3">Лиза В. <span className="text-muted float-right">3 дні тому</span></p>
+                                <p className="py-3">{t("index.mumSay.two.name")} <span className="text-muted float-right">{t("index.mumSay.two.time")}</span></p>
                                 <p className="font-weight-bold">
-                                    сын Марк, 3 месяца
+                                    {t("index.mumSay.two.child")}
                                 </p>
                                 <p className="py-3">
-                                    Честно, я в восторге от вашей идеи;) Игрушки отличные, новые, чистые! Я хочу новые заказать на следующий месяц.
+                                    {t("index.mumSay.two.text")}
                                 </p>
                                 <div className="rate">
                                     <img src="./img/index/star.svg" alt="" />
@@ -226,12 +226,12 @@ function Info() {
                         <div className="feedback-cards-item">
                             <div className="card my-5 text-purple">
                                 <img src="./img/index/quote-yellow.svg" alt="" className="quote" />
-                                <p className="py-3">Світлана К. <span className="text-muted float-right">4 дні тому</span></p>
+                                <p className="py-3">{t("index.mumSay.three.name")} <span className="text-muted float-right">{t("index.mumSay.three.time")}</span></p>
                                 <p className="font-weight-bold">
-                                    син Богдан, 5 років
+                                    {t("index.mumSay.three.child")}
                                 </p>
                                 <p className="py-3">
-                                    Рада, що нарешті з'явився такий сервіс! Вже отримала іграшки, все супергарне і якісне:)
+                                    {t("index.mumSay.three.text")}
                                 </p>
                                 <div className="rate">
                                     <img src="./img/index/star.svg" alt="" />
@@ -245,12 +245,12 @@ function Info() {
                             <div className="h-lg-3"></div>
                             <div className="card my-5 text-purple">
                                 <img src="./img/index/quote-cyan.svg" alt="" className="quote" />
-                                <p className="py-3">Елена Р. <span className="text-muted float-right">3 дні тому</span></p>
+                                <p className="py-3">{t("index.mumSay.four.name")} <span className="text-muted float-right">{t("index.mumSay.four.time")}</span></p>
                                 <p className="font-weight-bold">
-                                    дочь Аглая, 4 года
+                                    {t("index.mumSay.four.child")}
                                 </p>
                                 <p className="py-3">
-                                    Очень счастлива с вашей подпиской. Дочь очень радуется, что получает каждый месяц новые игрушки.
+                                    {t("index.mumSay.four.text")}
                                 </p>
                                 <div className="rate">
                                     <img src="./img/index/star.svg" alt="" />
@@ -289,12 +289,12 @@ function Info() {
                     <div className="col-md-6 col-12">
                         <div className="mx-auto">
                             <h1 className="text-purple text-huge">
-                                Почни гратись з Grow With You вже сьогодні!
+                                {t("footer.title")}
                             </h1>
                             <div className="text-sm-center">
                                 <div className="py-5 buttons">
-                                    <a href="https://growithyou.club/#plans"><button className="btn btn-filled-purple font-weight-bold">ПІДПИСАТИСЯ</button></a>
-                                    <Link to={'/givetoys'}><button className="btn btn-outlined-pink font-weight-bold">ВІДДАТИ ІГРАШКИ</button></Link>
+                                    <a href="https://growithyou.club/#plans"><button className="btn btn-filled-purple font-weight-bold">{t("footer.sub")}</button></a>
+                                    <Link to={'/givetoys'}><button className="btn btn-outlined-pink font-weight-bold">{t("footer.give")}</button></Link>
                                 </div>
                             </div>
                         </div>
@@ -314,8 +314,8 @@ function Info() {
                                     <img src="img/fb.svg" alt="" />
                                 </a>
                             </div>
-                            <p className="py-3">+380668203974 </p>
-                            <p>growwithyou.subscription@gmail.com</p>
+                            <p className="py-3">{t("footer.tel")} </p>
+                            <p>{t("footer.mail")}</p>
                             <div className="h-3 bg-purple"></div>
                             <div className="bg-purple">
                                 <img src="img/logo.svg" alt="" className="logo bg-purple" />

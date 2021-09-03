@@ -1,9 +1,11 @@
 import React, {useEffect} from 'react'
 import './Faq.css'
 import $ from "jquery";
+import {useTranslation} from "react-i18next";
 
 function Faq() {
 
+    const {t, i18n} = useTranslation();
     useEffect(() => {
         $('.faq-item-header img').click( function(event) {
             let text = event.target.parentElement.parentElement.children[1]
@@ -16,7 +18,7 @@ function Faq() {
     return (
         <div>
             <div className="page">
-                <h1 className="text-center text-purple py-5">Популярні запитання</h1>
+                <h1 className="text-center text-purple py-5">{t("faq.title")}</h1>
                 {/*<div className="text-center">*/}
                 {/*    <div className="input-group mx-auto">*/}
 				{/*<span className="input-logo">*/}
@@ -38,59 +40,57 @@ function Faq() {
                         <div className="faq-item text-purple">
                             <div className="faq-item-header">
                                 <p className="d-inline-block font-weight-bold">
-                                    Як відбувається оформлення підписки та її оплата?
+                                    {t("faq.question1.title")}
                                 </p>
                                 <img src="img/arrow-down.svg" alt="" className="d-inline-block float-right arrow-down" />
                             </div>
                             <div className="faq-item-body d-none">
-                                <p>Підписку можна оформити на сайті, обрав потрібні вам іграшки та залишивши свою електронну адресу. </p>
+                                <p>{t("faq.question1.ans")} </p>
                             </div>
                         </div>
                         <div className="faq-item text-purple">
                             <div className="faq-item-header">
                                 <p className="d-inline-block font-weight-bold">
-                                    Як ви дезінфікуєте іграшки?
+                                    {t("faq.question2.title")}
                                 </p>
                                 <img src="img/arrow-down.svg" alt="" className="d-inline-block float-right arrow-down" />
                             </div>
                             <div className="faq-item-body d-none">
-                                <p>М’які іграшки (плюшеві або фетрові) піддаваються еко-хімчистці, а також озонуванню <br />
-                                    Дерев'яні і пластикові іграшки дезінфікуються спеціальними засобами, що безпечні для дітей, а також проходять процедуру кварцювання
-                                </p>
+                                <p>{t("faq.question2.ans1")} <br /> {t("faq.question2.ans2")}</p>
                             </div>
                         </div>
                         <div className="faq-item text-purple">
                             <div className="faq-item-header">
                                 <p className="d-inline-block font-weight-bold">
-                                    Що я маю робити, якщо іграшка зламалась або загубилась?
+                                    {t("faq.question3.title")}
                                 </p>
                                 <img src="img/arrow-down.svg" alt="" className="d-inline-block float-right arrow-down" />
                             </div>
                             <div className="faq-item-body d-none">
-                                <p>Ви не несете жодних ризиків за втрачену або загублену іграшку. </p>
+                                <p>{t("faq.question3.ans")} </p>
                             </div>
                         </div>
                         <div className="faq-item text-purple">
                             <div className="faq-item-header">
                                 <p className="d-inline-block font-weight-bold">
-                                    Якщо малюку сподобалась іграшка, і він не захоче її віддавати так швидко?
+                                    {t("faq.question4.title")}
                                 </p>
                                 <img src="img/arrow-down.svg" alt="" className="d-inline-block float-right arrow-down" />
                             </div>
                             <div className="faq-item-body d-none">
-                                <p>Ви можете продовжувати користуватися нею та оновити решту іграшок АБО викупити її у нас за ціною -30% від роздрібної ціни</p>
+                                <p>{t("faq.question4.ans")}</p>
                             </div>
                         </div>
                         <div className="faq-item text-purple">
                             <div className="faq-item-header">
                                 <p className="d-inline-block font-weight-bold">
-                                    Яким чином відбувається доставка та повернення попереднього боксу?
+                                    {t("faq.question5.title")}
                                 </p>
                                 <img src="img/arrow-down.svg" alt="" className="d-inline-block float-right arrow-down" />
                             </div>
                             <div className="faq-item-body d-none">
-                                <p>Якщо ви живете в місті Київ, доставка та повернення боксів здійснюється до дверей нашим кур'єром <br />
-                                    Доставка та повернення в інші міста України здійснюється Новою Поштою БЕЗКОШТОВНО
+                                <p>{t("faq.question5.ans1")} <br />
+                                    {t("faq.question5.ans2")}
                                 </p>
                             </div>
                         </div>
@@ -124,8 +124,8 @@ function Faq() {
 					</a>
                                     </div>
                                     <div className="contacts text-white py-3">
-                                        <p>+380668203974 </p>
-                                        <p>growwithyou.subscription@gmail.com</p>
+                                        <p>{t("footer.tel")} </p>
+                                        <p>{t("footer.mail")}</p>
                                     </div>
                                     {/*<div className="links d-inline-block text-center py-2">*/}
                                     {/*    <a href="" className="text-white px-3">Terms&Conditions</a>*/}

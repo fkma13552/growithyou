@@ -3,8 +3,11 @@ import './css/style.css'
 import './About.css'
 import myFunc from './jsfront/index'
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 function About() {
+
+    const {t, i18n} = useTranslation();
 
     useEffect(() => {
         myFunc();
@@ -23,7 +26,7 @@ function About() {
                     <div className="col-lg-6 col-12  order-lg-2 order-md-1">
 
                         <h1 className="text-white text-huge text-center py-5">
-                            Що таке Grow With You?
+                            {t("about.title")}
                         </h1>
                     </div>
                     <div className="col-lg-3 col-6  order-lg-3 order-md-3 order-3">
@@ -41,25 +44,19 @@ function About() {
                     <div className="row py-5">
                         <div className="offset-lg-2 col-lg-8 col-12 text-center">
                             <p className="quote-about gradient">
-                                Grow With You - це сервіс, що покликаний спростити життя мами. Ми хочемо позбавити тебе
-                                від турбот, що пов'язані з постійним пошуком іграшок для твого малюка та головної болі
-                                від того, куди дівати непотрібні.
+                                {t("about.description")}
                             </p>
                         </div>
                     </div>
                     <div className="row">
                         <div className="offset-lg-2 col-lg-4 col-12 text-purple py-3">
                             <p>
-                                Чому підписка - запитаєте ви. Дитині постійно потрібно купувати нові іграшки: вона росте,
-                                і від мобілів та гризунців швидко переходить до сортерів та пазлів. Ми допомогаємо тобі
-                                знайти всі іграшки, що найкраще підходять для раннього розвитку малюка.
+                                {t("about.why1")}
                             </p>
                         </div>
                         <div className="col-lg-4 col-12 text-purple py-3">
                             <p>
-                                Чому підписка на оренду - наступне питання. Звичайно, не всі іграшки стають "улюбленими"
-                                для твоєї дитини: і якщо овечка стає постійним супутником для малюка, то пірамідка та
-                                інтерактивний куб потраплять у його немилість вже за місяць-два.
+                                {t("about.why2")}
                             </p>
                         </div>
                     </div>
@@ -70,26 +67,19 @@ function About() {
                     </div>
                     <div className="row">
                         <div className="offset-lg-2 col-lg-4 col-12 text-purple">
-                            <p className="font-weight-bold py-3">Як все починалося?</p>
+                            <p className="font-weight-bold py-3">{t("about.howItStarted.title")}</p>
                             <p>
-                                Ми займались просуванням відповідального споживання та виробництва як громадська організація.
-                                Глибше дослідивши проблеми у цих сферах, нам захотілось зробити щось, що б допомагало людям і робило їх життя більш екологічним. <br/>
+                                {t("about.howItStarted.first")}<br/>
 
-                                Парелельно ми спілкувались з мамами і розуміли, що у них не завжди є час на пошуки іграшок для малюка,
-                                а їх потрібно купувати постійно: дитина росте, розвивається і пізнає світ через ігри.
-                                Поряд з тим період користування іграшками досить недовгий, і потім мамі потрібно думати,
-                                де зберігати/кому віддавати вже непотрібні.
+                                {t("about.howItStarted.second")}
                             </p>
                             <p className="py-3">
-                                Так народилась ідея сервісу підписки на дитячі іграшки, що дозволяє малюку пробувати багато
-                                різноманітних іграшок і знаходити ті, що сподобаються, а мамі - не витрачати час та зусилля на
-                                підбір іграшок та вирішення їх подальшої долі.
+                                {t("about.howItStarted.third")}
                             </p>
                         </div>
                         <div className="col-lg-4 col-12">
                             <p className="text-pink quote-about py-3">
-                                Все просто. Ми хочемо: змінити традиційну модель споживання дитячих іграшок,
-                                що дозволить збільшити кількість циклів їх використання у 4 рази.
+                                {t("about.goal")}
                             </p>
                         </div>
                     </div>
@@ -137,12 +127,12 @@ function About() {
                     <div className="col-md-6 col-12">
                         <div className="mx-auto">
                             <h1 className="text-purple text-huge">
-                                Почни гратися з Grow With You вже сьогодні!
+                                {t("footer.title")}
                             </h1>
                             <div className="text-sm-center">
                                 <div className="py-5 buttons">
-                                    <a href="https://growithyou.club/#plans"><button className="btn btn-filled-purple font-weight-bold">ПІДПИСАТИСЯ</button></a>
-                                    <Link to={'/givetoys'}><button className="btn btn-outlined-pink font-weight-bold">ВІДДАТИ ІГРАШКИ</button></Link>
+                                    <a href="https://growithyou.club/#plans"><button className="btn btn-filled-purple font-weight-bold">{t("footer.sub")}</button></a>
+                                    <Link to={'/givetoys'}><button className="btn btn-outlined-pink font-weight-bold">{t("footer.give")}</button></Link>
                                 </div>
                             </div>
                         </div>
@@ -161,8 +151,8 @@ function About() {
                                     <img src="img/fb.svg" alt="" />
                                 </a>
                             </div>
-                            <p className="py-3">+380668203974</p>
-                            <p>growwithyou.subscription@gmail.com</p>
+                            <p className="py-3">{t("footer.tel")}</p>
+                            <p>{t("footer.mail")}</p>
                             <div className="h-3 bg-purple"></div>
                             <div className="bg-purple">
                                 <img src="img/logo.svg" alt="" className="logo bg-purple" />
