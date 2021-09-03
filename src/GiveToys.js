@@ -3,8 +3,11 @@ import {Link} from 'react-router-dom'
 import sheetdb from 'sheetdb-node'
 import {useEffect, useState} from 'react'
 import myFunc from "./jsfront";
+import {useTranslation} from "react-i18next";
 
 function GiveToys() {
+
+    const {t, i18n} = useTranslation();
 
     const [name, setName] = useState('');
     const [number, setNumber] = useState('');
@@ -71,7 +74,7 @@ function GiveToys() {
 
             <div className="">
                 <h1 className="text-center font-weight-bold text-purple">
-                    Передати іграшки
+                    {t("giveAwayToys.title")}
                 </h1>
                 <div className="h-3"></div>
                 <div className="container text-purple">
@@ -79,38 +82,37 @@ function GiveToys() {
                         <div className="offset-lg-3 col-lg-6 col-12">
                             <form action="">
                                 <div className="form-item">
-                                    <label htmlFor="name" className="font-weight-bold">Ім'я та призвіще</label><br />
-                                    <input type="text" id="name" name="name" placeholder="Ім'я та призвіще"
+                                    <label htmlFor="name" className="font-weight-bold">{t("giveAwayToys.name")}</label><br />
+                                    <input type="text" id="name" name="name" placeholder={t("giveAwayToys.name")}
                                            className="w-100" value={name} onChange={handleNameChange} required/>
                                 </div>
                                 <div className="form-item">
-                                    <label htmlFor="tel" className="font-weight-bold">Мобільний номер</label><br />
-                                    <input type="tel" id="tel" name="tel" placeholder="+38(___) ___ __ __"
+                                    <label htmlFor="tel" className="font-weight-bold">{t("giveAwayToys.number")}</label><br />
+                                    <input type="tel" id="tel" name="tel" placeholder={t("giveAwayToys.placeholderNum")}
                                            className="w-100" value={number} onChange={handleNumberChange} required/>
                                 </div>
                                 <div className="form-item">
-                                    <label htmlFor="email" className="font-weight-bold">Електронна адреса</label><br />
-                                    <input type="email" id="email" name="email" placeholder="Електронна адреса"
+                                    <label htmlFor="email" className="font-weight-bold">{t("giveAwayToys.email")}</label><br />
+                                    <input type="email" id="email" name="email" placeholder={t("giveAwayToys.email")}
                                            className="w-100" value={email} onChange={handleEmailChange} required/>
                                 </div>
                                 <div className="form-item">
-                                    <label className="checkbox-container">Я даю згоду на обробку моїх персональних
-                                        данних
+                                    <label className="checkbox-container">
+                                        {t("giveAwayToys.dataProcess")}
                                         <input type="checkbox" required/>
                                             <span className="checkmark"></span>
                                     </label>
                                 </div>
                                 <div className="form-item py-3">
-                                    <label className="font-weight-bold">Оберіть месенджер, у якому вам зручніше
-                                        продовжити спілкування:</label><br />
+                                    <label className="font-weight-bold">{t("giveAwayToys.messengerChoice")}</label><br />
 
 
-                                    <label htmlFor="viber" className="checkbox-container w-sm-100">Viber
+                                    <label htmlFor="viber" className="checkbox-container w-sm-100">{t("giveAwayToys.choice1")}
                                         <input type="radio" id="viber" name="messenger" onChange={handleTelVibChange} required/>
                                             <span className="radio"></span>
                                     </label>
 
-                                    <label htmlFor="telegram" className="checkbox-container w-sm-100">Telegram
+                                    <label htmlFor="telegram" className="checkbox-container w-sm-100">{t("giveAwayToys.choice2")}
                                         <input type="radio" id="telegram" name="messenger" onChange={handleTelVibChange} required/>
                                             <span className="radio"></span>
                                     </label>

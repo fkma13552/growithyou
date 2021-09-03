@@ -12,6 +12,7 @@
 
     "index": {
         "title": "Monthly kids toys subscription",
+        "linkPlans": "http://en.growithyou.club/#plans",
         "mainButtons": {
             "sub": "SUBSCRIBE",
             "give": "GIVE AWAY TOYS",
@@ -108,27 +109,42 @@
     },
 
     "faq": {
-        "title": "",
+        "title": "Popular questions",
         "question1": {
-            "title": "",
-            "ans": ""
+            "title": "How can I subscribe and pay?",
+            "ans": "You can subscribe at Grow With You platform by selecting the toys you need and leaving your personal info."
         },
         "question2": {
-            "title": "",
-            "ans": ""
+            "title": "How do you disinfect toys?",
+            "ans1": "Soft toys (plush or felt) get an eco-dry cleaning and ozonation.",
+            "ans2": "Wooden and plastic toys are disinfected with special disinfectants that are safe for your child."
         },
         "question3": {
-            "title": "",
-            "ans": ""
+            "title": "What should I do if the toy is broken or lost?",
+            "ans": "You do not bear any risks for a broken or a lost toy."
         },
         "question4": {
-            "title": "",
-            "ans": ""
+            "title": "What if a kid falls in love with a toy and doesn't want to give it back so quickly?",
+            "ans": "You can continue to play with it and update the rest of the toys OR buy it out from us with 30% off from the initial retail price."
         },
         "question5": {
-            "title": "",
-            "ans": ""
+            "title": "How is the previous box delivered and returned?",
+            "ans1": "If you live in New York, delivering and returning boxes is carried out to the door by our couriers.",
+            "ans2": "As we have just launched in New York, for other cities in the US the additional information will be available later."
         }
+    },
+
+    "giveAwayToys": {
+        "title": "Give away toys",
+        "name": "Name and surname",
+        "number": "Mobile number",
+        "placeholderNum": "+1 ___________",
+        "email": "Email address",
+        "dataProcess": "I consent to the processing of my personal data",
+        "messengerChoice": "Choose the messenger for further communication Whatsapp or Facebook",
+        "choice1": "Whatsapp",
+        "choice2": "Facebook"
+
     },
 
     "footer": {
