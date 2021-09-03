@@ -3,7 +3,7 @@ import './Faq.css'
 import $ from "jquery";
 import {useTranslation} from "react-i18next";
 
-function Faq({lang}) {
+function Faq() {
 
     const {t, i18n} = useTranslation();
     useEffect(() => {

@@ -3,7 +3,7 @@ import {Link,  useLocation} from 'react-router-dom'
 import myFunc from "./jsfront";
 import {useTranslation} from "react-i18next";
 
-function Header({lang}) {
+function Header() {
 
     const {t, i18n} = useTranslation();
     const [headerWhite, setHeaderWhite] = useState(false);

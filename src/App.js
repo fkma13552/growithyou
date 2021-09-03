@@ -45,17 +45,17 @@ function App() {
 
   return (
     <>
-      <Header compName ={compName} changeCompName={() => setCompName} lang={domain}/>
+      <Header compName ={compName} changeCompName={() => setCompName} />
       <ScrollToTop>
         <Switch>
           <Route exact path={'/'}>
-            <Info lang={domain}/>
+            <Info />
           </Route>
           <Route path = {'/about'}>
-            <About lang={domain}/>
+            <About />
           </Route>
           <Route path={'/faq'}>
-            <Faq lang={domain}/>
+            <Faq />
           </Route>
           <Route path={'/givetoys'}>
             <GiveToys />
