@@ -38,7 +38,7 @@ function App() {
   const [compName, setCompName] = useState('index');
   useEffect(() => {
     myFunc();
-    if (domain === "en.growithyou.com"){
+    if (domain === "en.growithyou.club"){
       i18n.changeLanguage('en');
     }
   },[domain]);
