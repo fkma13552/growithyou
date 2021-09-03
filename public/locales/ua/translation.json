@@ -1,6 +1,7 @@
 {
     "navbar": {
         "catalog": "Каталог іграшок",
+        "catalogURL": "http://growithyou.com",
         "about": "Про нас",
         "questions": "Популярні запитання",
         "close": "Закрити",

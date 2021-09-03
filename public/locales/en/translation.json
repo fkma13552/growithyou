@@ -1,6 +1,7 @@
 {
     "navbar": {
         "catalog": "Toys catalog",
+        "catalogURL": "http://growithyou.tilda.ws/",
         "about": "About us",
         "questions": "Popular questions",
         "close": "Close",
@@ -10,7 +11,7 @@
     },
 
     "index": {
-        "title": "Monthly toys subscription for your baby",
+        "title": "Monthly kids toys subscription",
         "mainButtons": {
             "sub": "SUBSCRIBE",
             "give": "GIVE AWAY TOYS",
@@ -26,7 +27,8 @@
 
         "plans": {
             "title": "Subscription plans",
-            "plant": "toys",
+            "toysPlur1": "toys",
+            "toysPlur2": "toys",
             "plan1": {
                 "desc": "Curious Einstein - one hundred new discoveries",
                 "price": "15$"

@@ -33,7 +33,7 @@ function usePageViews(){
 function App() {
   usePageViews();
 
-  const domain = window.location.hostname;
+  const domain = document.domain;
 
   const [compName, setCompName] = useState('index');
   useEffect(() => {
@@ -41,7 +41,7 @@ function App() {
     if (domain === "en.growithyou.club"){
       i18n.changeLanguage('en');
     }
-  },[domain]);
+  });
 
   return (
     <>

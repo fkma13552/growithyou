@@ -80,7 +80,7 @@ function Header() {
                 <div className="lg-nav">
                     <ul>
                         <li className={headerWhite? 'nav-link-purple': 'nav-link'}>
-                            <a href="https://www.growithyou.com">{t("navbar.catalog")}</a>
+                            <a href={t("navbar.catalogURL")}>{t("navbar.catalog")}</a>
                         </li>
                         <li className={headerWhite? 'nav-link-purple': 'nav-link'}>
                             <Link to={'/about'} onClick={() => handleRoutingNavbar()}><a href="">{t("navbar.about")}</a></Link>
