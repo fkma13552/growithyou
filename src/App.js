@@ -13,6 +13,7 @@ import {BrowserRouter as Router, Switch, Route, useLocation} from 'react-router-
 import myFunc from "./jsfront";
 import 'slick-carousel/slick/slick.min'
 import ReactGA from 'react-ga'
+import i18n from "i18next";
 
 function usePageViews(){
   let location = useLocation();
@@ -32,24 +33,29 @@ function usePageViews(){
 function App() {
   usePageViews();
 
+  const domain = window.location.hostname;
+
   const [compName, setCompName] = useState('index');
   useEffect(() => {
     myFunc();
-  });
+    if (domain === "en.growithyou.com"){
+      i18n.changeLanguage('en');
+    }
+  },[domain]);
 
   return (
     <>
-      <Header compName ={compName} changeCompName={() => setCompName}/>
+      <Header compName ={compName} changeCompName={() => setCompName} lang={domain}/>
       <ScrollToTop>
         <Switch>
           <Route exact path={'/'}>
-            <Info />
+            <Info lang={domain}/>
           </Route>
           <Route path = {'/about'}>
-            <About />
+            <About lang={domain}/>
           </Route>
           <Route path={'/faq'}>
-            <Faq />
+            <Faq lang={domain}/>
           </Route>
           <Route path={'/givetoys'}>
             <GiveToys />

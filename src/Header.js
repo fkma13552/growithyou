@@ -3,12 +3,11 @@ import {Link,  useLocation} from 'react-router-dom'
 import myFunc from "./jsfront";
 import {useTranslation} from "react-i18next";
 
-function Header() {
+function Header({lang}) {
 
     const {t, i18n} = useTranslation();
     const [headerWhite, setHeaderWhite] = useState(false);
     const [navbarOpened, changeNavbarOpened] = useState(false);
-    let domain = window.location.hostname;
     let locationOut = useLocation().pathname;
 
     useEffect(() => {
@@ -37,7 +36,6 @@ function Header() {
 
     const handleRoutingNavbar = () => {
 
-        console.log(domain)
         let location = locationOut;
 
         if (location === '/faq'){
