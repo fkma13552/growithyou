@@ -131,7 +131,7 @@ function About() {
                             </h1>
                             <div className="text-sm-center">
                                 <div className="py-5 buttons">
-                                    <a href="https://growithyou.club/#plans"><button className="btn btn-filled-purple font-weight-bold">{t("footer.sub")}</button></a>
+                                    <a href={t("index.linkPlans")}><button className="btn btn-filled-purple font-weight-bold">{t("footer.sub")}</button></a>
                                     <Link to={'/givetoys'}><button className="btn btn-outlined-pink font-weight-bold">{t("footer.give")}</button></Link>
                                 </div>
                             </div>

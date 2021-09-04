@@ -120,7 +120,7 @@ function GiveToys() {
                                     <br />
                                 </div>
                                 <input type="submit" className="btn btn-filled-purple my-4 mx-auto d-block"
-                                       value="ВІДПРАВИТИ" onClick={(event) => postData(name, number, email, telvib, event)}/>
+                                       value={t("giveAwayToys.send")} onClick={(event) => postData(name, number, email, telvib, event)}/>
                             </form>
                         </div>
                     </div>

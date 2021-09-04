@@ -1,7 +1,7 @@
 {
     "navbar": {
         "catalog": "Toys catalog",
-        "catalogURL": "http://growithyou.tilda.ws/",
+        "catalogURL": "http://growithyou.tilda.ws/catalog",
         "about": "About us",
         "questions": "Popular questions",
         "close": "Close",
@@ -143,7 +143,8 @@
         "dataProcess": "I consent to the processing of my personal data",
         "messengerChoice": "Choose the messenger for further communication Whatsapp or Facebook",
         "choice1": "Whatsapp",
-        "choice2": "Facebook"
+        "choice2": "Facebook",
+        "send": "Send"
 
     },
 

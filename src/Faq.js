@@ -3,17 +3,17 @@ import './Faq.css'
 import $ from "jquery";
 import {useTranslation} from "react-i18next";
 
-function Faq() {
+function Faq({location}) {
 
-    const {t, i18n} = useTranslation();
     useEffect(() => {
         $('.faq-item-header img').click( function(event) {
             let text = event.target.parentElement.parentElement.children[1]
             $(event.target).toggleClass('arrow-up');
             $(text).toggleClass('d-none')
         })
-    });
+    },[location]);
 
+    const {t, i18n} = useTranslation();
 
     return (
         <div>

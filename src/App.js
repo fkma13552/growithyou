@@ -34,6 +34,7 @@ function App() {
   usePageViews();
 
   const domain = document.domain;
+  const [location, setLocation] = useState(useLocation().pathname);
 
   const [compName, setCompName] = useState('index');
   useEffect(() => {
@@ -55,7 +56,7 @@ function App() {
             <About />
           </Route>
           <Route path={'/faq'}>
-            <Faq />
+            <Faq location={location}/>
           </Route>
           <Route path={'/givetoys'}>
             <GiveToys />

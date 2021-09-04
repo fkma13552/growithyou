@@ -140,7 +140,8 @@
         "dataProcess": "Я даю згоду на обробку моїх персональних даних",
         "messengerChoice": "Оберіть месенджер, у якому вам зручніше продовжити спілкування:",
         "choice1": "Viber",
-        "choice2": "Telegram"
+        "choice2": "Telegram",
+        "send": "Відправити"
 
     },
     "footer": {
