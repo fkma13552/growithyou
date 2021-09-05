@@ -1,7 +1,7 @@
 {
+    "catalogURL": "https://growithyou.tilda.ws/catalog",
     "navbar": {
         "catalog": "Toys catalog",
-        "catalogURL": "http://growithyou.tilda.ws/catalog",
         "about": "About us",
         "questions": "Popular questions",
         "close": "Close",
@@ -12,7 +12,7 @@
 
     "index": {
         "title": "Monthly kids toys subscription",
-        "linkPlans": "http://en.growithyou.club/#plans",
+        "linkPlans": "https://en.growithyou.club/#plans",
         "mainButtons": {
             "sub": "SUBSCRIBE",
             "give": "GIVE AWAY TOYS",

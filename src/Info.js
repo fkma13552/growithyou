@@ -94,7 +94,7 @@ function Info() {
                                 </h2>
                                 <p>{t("index.plans.plan1.desc")}</p>
                                 <h1 className="text-red py-3">{t("index.plans.plan1.price")}</h1>
-                                <a href={t("index.catalogURL")}><button className="btn btn-filled-purple">{t("index.mainButtons.sub")}</button></a>
+                                <a href={t("catalogURL")}><button className="btn btn-filled-purple">{t("index.mainButtons.sub")}</button></a>
                             </div>
                         </div>
                         <div className="col-lg-4 col-12 mx-auto">
@@ -105,7 +105,7 @@ function Info() {
                                 </h2>
                                 <p>{t("index.plans.plan2.desc")}</p>
                                 <h1 className="text-red py-3">{t("index.plans.plan2.price")}</h1>
-                                <a href={t("index.catalogURL")}><button className="btn btn-filled-purple">{t("index.mainButtons.sub")}</button></a>
+                                <a href={t("catalogURL")}><button className="btn btn-filled-purple">{t("index.mainButtons.sub")}</button></a>
                             </div>
                         </div>
                         <div className="col-lg-4 col-12 mx-auto">
@@ -116,7 +116,7 @@ function Info() {
                                 </h2>
                                 <p>{t("index.plans.plan3.desc")}</p>
                                 <h1 className="text-red py-3">{t("index.plans.plan3.price")}</h1>
-                                <a href={t("index.catalogURL")}><button className="btn btn-filled-purple">{t("index.mainButtons.sub")}</button></a>
+                                <a href={t("catalogURL")}><button className="btn btn-filled-purple">{t("index.mainButtons.sub")}</button></a>
                             </div>
                         </div>
                     </div>

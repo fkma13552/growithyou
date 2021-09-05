@@ -1,8 +1,7 @@
 {
-    "linkPlans": "http://growithyou.club/#plans",
+    "catalogURL": "https://growithyou.com",
     "navbar": {
         "catalog": "Каталог іграшок",
-        "catalogURL": "http://growithyou.com",
         "about": "Про нас",
         "questions": "Популярні запитання",
         "close": "Закрити",
@@ -13,6 +12,7 @@
 
     "index": {
         "title": "Щомісячна підписка на іграшки для вашого малюка",
+        "linkPlans": "https://growithyou.club/#plans",
         "mainButtons": {
             "sub": "ПІДПИСАТИСЬ",
             "give": "ВІДДАТИ ІГРАШКИ",
