@@ -47,7 +47,7 @@ function App() {
   return (
     <>
       <Header compName ={compName} changeCompName={() => setCompName} />
-      <ScrollToTop>
+
         <Switch>
           <Route exact path={'/'}>
             <Info />
@@ -61,8 +61,7 @@ function App() {
           <Route path={'/givetoys'}>
             <GiveToys />
           </Route>
-        </Switch> 
-      </ScrollToTop>
+        </Switch>
     </>
   );
 }

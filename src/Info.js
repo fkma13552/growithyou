@@ -174,7 +174,7 @@ function Info() {
                     </div>
                 </div>
                 <div className="text-center py-5">
-                    <Link to={'/about'}><button className="btn btn-filled-yellow font-weight-bold">{t("index.mainButtons.findMore")}</button></Link>
+                    <Link to={'/about'}><button className="btn btn-filled-yellow font-weight-bold" onClick={() => window.scrollTo(0,0)}>{t("index.mainButtons.findMore")}</button></Link>
                 </div>
 
             </div>
