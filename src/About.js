@@ -151,8 +151,13 @@ function About() {
                                     <img src="img/fb.svg" alt="" />
                                 </a>
                             </div>
-                            <p className="py-3">{t("footer.tel")}</p>
-                            <p>{t("footer.mail")}</p>
+
+                                <p className="py-3" >
+                                    <a href="" className="text-white" href="tel:+380668203974">{t("footer.tel")}</a>
+                                </p>
+                                <p>
+                                    <a href="mailto:growwithyou.subscription@gmail.com" className="text-white">{t("footer.mail")}</a>
+                                </p>
                             <div className="h-3 bg-purple"></div>
                             <div className="bg-purple">
                                 <img src="img/logo.svg" alt="" className="logo bg-purple" />

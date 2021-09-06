@@ -124,8 +124,8 @@ function Faq({location}) {
 					</a>
                                     </div>
                                     <div className="contacts text-white py-3">
-                                        <p>{t("footer.tel")} </p>
-                                        <p>{t("footer.mail")}</p>
+                                        <p><a className="text-white" href="tel:+380668203974">{t("footer.tel")}</a></p>
+                                        <p><a className="text-white" href="mailto:growwithyou.subscription@gmail.com">{t("footer.mail")}</a></p>
                                     </div>
                                     {/*<div className="links d-inline-block text-center py-2">*/}
                                     {/*    <a href="" className="text-white px-3">Terms&Conditions</a>*/}
