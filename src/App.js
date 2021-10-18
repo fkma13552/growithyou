@@ -7,8 +7,10 @@ import Info from "./Info";
 import About from "./About";
 import Faq from "./Faq";
 import GiveToys from "./GiveToys";
-import ScrollToTop from './ScrollToTop'
-import {useState, useEffect} from 'react'
+import ScrollToTop from './ScrollToTop';
+import Shipping from "./Shipping";
+import Privacy from "./Privacy";
+import {useState, useEffect} from 'react';
 import {BrowserRouter as Router, Switch, Route, useLocation} from 'react-router-dom'
 import myFunc from "./jsfront";
 import 'slick-carousel/slick/slick.min'
@@ -60,6 +62,12 @@ function App() {
           </Route>
           <Route path={'/givetoys'}>
             <GiveToys />
+          </Route>
+          <Route path={'/privacy'}>
+            <Privacy />
+          </Route>
+          <Route path={'/shipping'}>
+            <Shipping />
           </Route>
         </Switch>
     </>

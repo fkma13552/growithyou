@@ -149,7 +149,9 @@
         "sub": "ПІДПИСАТИСЬ",
         "give": "ВІДДАТИ ІГРАШКИ",
         "tel": "+380668203974",
-        "mail": "growwithyou.subscription@gmail.com"
+        "mail": "growwithyou.subscription@gmail.com",
+        "privacy": "Політика конфіденційності",
+        "shipping": "Доставка і оплата"
     }
 
 }

@@ -153,7 +153,9 @@
         "sub": "GET STARTED",
         "give": "GIVE AWAY TOYS",
         "tel": "+380668203974",
-        "mail": "growwithyou.subscription@gmail.com"
+        "mail": "growwithyou.subscription@gmail.com",
+        "privacy": "Privacy policy",
+        "shipping": "Shipping policy"
     }
 
 }

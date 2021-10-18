@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import './Faq.css'
 import $ from "jquery";
 import {useTranslation} from "react-i18next";
+import {Link} from "react-router-dom";
 
 function Faq({location}) {
 
@@ -127,10 +128,12 @@ function Faq({location}) {
                                         <p><a className="text-white" href="tel:+380668203974">{t("footer.tel")}</a></p>
                                         <p><a className="text-white" href="mailto:growwithyou.subscription@gmail.com">{t("footer.mail")}</a></p>
                                     </div>
-                                    {/*<div className="links d-inline-block text-center py-2">*/}
-                                    {/*    <a href="" className="text-white px-3">Terms&Conditions</a>*/}
-                                    {/*    <a href="" className="text-white px-3">Legal&privacy</a>*/}
-                                    {/*</div>*/}
+                                    <div className="col-md-4 col-12">
+                                        <div className="links d-inline-block text-center py-2">
+                                            <Link to={'/shipping'}><a href="" className="text-white px-3">{t("footer.shipping")}</a></Link>
+                                            <Link to={'/privacy'}><a href="" className="text-white px-3">{t("footer.privacy")}</a></Link>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
