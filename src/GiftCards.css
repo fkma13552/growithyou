@@ -1,0 +1,258 @@
+.nav-pink {
+    background-color: var(--pink);
+}
+
+.nav-pink .nav-link-active a{
+    color: var(--purple);
+}
+
+.nav-pink .nav-link a:hover {
+    color: var(--purple);
+    transition: .3s;
+}
+
+.header-pink {
+    background-color: var(--pink);
+    overflow: hidden;
+}
+
+.info-icon, .question-icon {
+    display:  inline-block;
+    height: 2rem;
+    width:  2rem;
+    vertical-align: middle;
+    margin: 0 1rem;
+}
+
+.question-icon img {
+    margin-left: 1rem;
+}
+
+.frame-part p {
+    display: inline-block;
+    color: var(--purple);
+    width:  85%;
+}
+
+.how-it-works-gift {
+    justify-content: flex-end;
+}
+
+.h-2 {
+    height:  20px;
+}
+
+.speech-bubble {
+    padding: .5rem;
+    position: relative;
+    background: white;
+    border-radius: .4em;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: white;
+    border-top: 0;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .frame-part p {
+        width:  100%;
+        padding-bottom: 1rem;
+    }
+
+    .how-it-works {
+        justify-content: flex-start;
+    }
+
+    .how-it-works img {
+        order:  1;
+    }
+
+    .how-it-works p {
+        order: 2;
+        margin: auto 0;
+    }
+
+    .speech-bubble:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 30px;
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-bottom-color: white;
+        border-top: 0;
+        margin-left: -10px;
+        margin-top: -10px;
+    }
+}
+
+.arrow-icon {
+    width: 10%;
+    max-height: 15rem;
+    height: auto;
+    float: right;
+    margin-top: .5rem;
+}
+
+.frame {
+    border:  4px solid var(--pink);
+    border-radius: var(--radius);
+}
+
+.create-certificate .frame p {
+    vertical-align: middle;
+    margin-left: 1rem;
+}
+
+.frame label {
+    margin-left: 1rem;
+}
+
+.certificates .left, .certificates .right {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    margin: 0 6%;
+}
+
+.certificates-form label {
+    margin: 0 7%;
+    display: inline-block;
+}
+
+.r {
+    width:  40%;
+    display: inline-block;
+}
+
+.h3 {
+    font-size: 1.5rem;
+
+}
+
+.light-pink-bg {
+    background-color: #FFEFFF;
+}
+
+.l-checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.l-checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.l-checkmark, .l-radio {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: var(--white);
+    border: solid 1.5px;
+    border-color: var(--purple);
+    border-radius: 4px;
+    transition: .1s;
+}
+
+.l-radio {
+    border-radius: 50%;
+}
+
+.l-checkbox-container input:checked ~ .l-checkmark {
+    background-color: var(--purple);
+}
+
+.l-checkbox-container input:checked ~ .l-radio {
+    background-color: var(--purple) !important;
+}
+
+.l-checkmark:after, .l-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.l-checkbox-container input:checked ~ .l-checkmark::after {
+    display: block;
+}
+
+.l-checkbox-container input:checked ~ .l-radio::after {
+    display: block;
+}
+
+.l-checkbox-container .l-checkmark::after {
+    left: 5.5px;
+    top:  1.5px;
+    width: 8px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg);
+    transition: .1s;
+}
+
+.l-checkbox-container .l-radio::after {
+
+    left: 1px;
+    top:  1px;
+    width: 15px;
+    height: 15px;
+    border: solid white 2px;
+    border-radius: 50%;
+    transition: .1s;
+}
+
+.btn-filled-pink {
+    border-color: var(--pink);
+    color: white;
+    background-color: var(--pink);
+}
+
+.btn-filled-pink:hover{
+    border-color: var(--pink);
+    color: var(--pink);
+    background-color: var(--transparent);
+}
+
+.form-item input {
+    background-color: var(--white);
+}
+
+.pink-bg, .legals {
+    background-color: var(--pink) !important;
+}
+
+.footer-hat {
+    margin-bottom: -7px;
+}
+
+.page-bg {
+    background-image: url("./img/dots-bg.svg");
+    width: 100vw;
+    overflow: hidden;
+}

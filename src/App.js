@@ -8,6 +8,7 @@ import About from "./About";
 import Faq from "./Faq";
 import GiveToys from "./GiveToys";
 import ScrollToTop from './ScrollToTop';
+import GiftCards from "./GiftCards";
 import Shipping from "./Shipping";
 import Privacy from "./Privacy";
 import {useState, useEffect} from 'react';
@@ -53,6 +54,9 @@ function App() {
         <Switch>
           <Route exact path={'/'}>
             <Info />
+          </Route>
+          <Route path={'/giftcards'}>
+            <GiftCards />
           </Route>
           <Route path = {'/about'}>
             <About />
