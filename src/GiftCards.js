@@ -11,6 +11,7 @@ function GiftCards() {
     const [number, setNumber] = useState('');
     const [email, setEmail] = useState('');
     const [telvib, setTelVib] = useState('');
+    const [hintShow, setHintShow] = useState(false);
 
     useEffect(()=>{
         myFunc();
@@ -173,9 +174,9 @@ function GiftCards() {
                                         Для чого це потрібно?
 
                                     </p>
-                                    <img src="img/gift/question-icon.svg" alt="" className="question-icon" />
+                                    <img src="img/gift/question-icon.svg" alt="" className="question-icon" onClick={()=>setHintShow(!hintShow)}/>
                                 </div>
-                                <div className="speech-bubble my-3 "><p className="text-pink font-weight-bold">
+                                <div className={hintShow?"speech-bubble my-3":"d-none"}><p className="text-pink font-weight-bold">
                                     Якщо хочете подвоїти радісні емоції малюка, на додаток до сертифікату ви можете
                                     обрати також іграшки на перший місяць підписки :)</p>
                                 </div>
