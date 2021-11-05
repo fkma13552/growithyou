@@ -23,7 +23,7 @@ function usePageViews(){
 
   useEffect(() => {
     if(!window.GA_INITIALIZED){
-      ReactGA.initialize("G-D94EQ8J0MD");
+      ReactGA.initialize("GTM-NRL99DW");
       window.GA_INITIALIZED = true;
     }
 

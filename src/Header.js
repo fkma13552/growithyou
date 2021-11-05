@@ -42,6 +42,9 @@ function Header() {
         if (location === '/faq'){
             setHeaderWhite(true);
         }
+        else if (location === '/giftcards' && navbarOpened){
+            setHeaderWhite(true);
+        }
         else if (location === '/giftcards'){
             setHeaderWhite(false);
         }
@@ -56,7 +59,7 @@ function Header() {
             setHeaderWhite(true)
         }
         else if(location === '/giftcards'){
-            setHeaderWhite(false);
+            setHeaderWhite(true);
         }
 
     }
@@ -64,7 +67,7 @@ function Header() {
 
         return(
             <div>
-                <nav className='nav-pink'>
+                <nav className={headerWhite ? 'nav-white': 'nav-pink'}>
                     <div className="container text-sm-center text-md-center">
                         <div className="show-menu-btn d-sm text-center text-white float-left" id="toogleMenuBtn" onClick={() => handleToggleNavbar()}>
 				<span className={navbarOpened ? "d-none" : "open-menu"}>
@@ -124,11 +127,17 @@ function Header() {
                             <li>
                                 <a href={t("catalogURL")}>{t("navbar.catalog")}</a>
                             </li>
+                            {
+                                domain !== "en.growithyou.club" &&
+                                <li className={headerWhite? 'nav-link-purple': 'nav-link'}>
+                                    <Link to={'/giftcards'} onClick={() => handleRoutingNavbar()}>{t("navbar.giftcard")}</Link>
+                                </li>
+                            }
                             <li>
                                 <Link to={'/about'}><a href="">{t("navbar.about")}</a></Link>
                             </li>
                             <li>
-                                <Link to={'/faq'} onClick={() => handleRoutingNavbarMini()}><a href="">{t("navbar.questions")}</a></Link>
+                                <Link to={'/faq'} onClick={() => handleRoutingNavbar()}><a href="">{t("navbar.questions")}</a></Link>
                             </li>
                         </ul>
                     </div>
@@ -193,11 +202,17 @@ function Header() {
                     <div className="container">
                         <ul>
                             <li>
-                                <Link to={'/'}><a href="">{t("navbar.mainpage")}</a></Link>
+                                <Link to={'/'} onClick={() => handleRoutingNavbarMini()}><a href="">{t("navbar.mainpage")}</a></Link>
                             </li>
                             <li>
                                 <a href={t("catalogURL")}>{t("navbar.catalog")}</a>
                             </li>
+                            {
+                                domain !== "en.growithyou.club" &&
+                                <li className={headerWhite? 'nav-link-purple': 'nav-link'}>
+                                    <Link to={'/giftcards'} onClick={() => handleRoutingNavbarMini()}>{t("navbar.giftcard")}</Link>
+                                </li>
+                            }
                             <li>
                                 <Link to={'/about'}><a href="">{t("navbar.about")}</a></Link>
                             </li>

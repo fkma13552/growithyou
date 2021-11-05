@@ -135,16 +135,21 @@ function GiftCards() {
                                     <label htmlFor="3-month"
                                            className="l-checkbox-container text-purple font-weight-bold"><span
                                         className="text-cyan h3">3</span> місяці
+                                        <div className="mx-auto">
+                                            <h3 className="gift-price-text font-weight-bold text-pink">1500 грн</h3>
+                                        </div>
                                         <input type="radio" id="3-month" name="duration" onChange={handleMonthesChange} required/>
                                             <span className="l-radio"></span>
                                     </label>
-
 
                                 </div>
                                 <div className="r text-center">
                                     <label htmlFor="6-month"
                                            className="l-checkbox-container text-purple font-weight-bold"><span
                                         className="text-pink h3">6</span> місяців
+                                        <div className="mx-auto">
+                                            <h3 className="gift-price-text font-weight-bold text-pink">1500 грн</h3>
+                                        </div>
                                         <input type="radio" id="6-month" name="duration" onChange={handleMonthesChange} required/>
                                             <span className="l-radio"></span>
                                     </label>
