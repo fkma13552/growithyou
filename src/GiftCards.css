@@ -251,7 +251,7 @@
     background-color: var(--white);
 }
 
-.pink-bg, .legals {
+.pink-bg, .legals-pink {
     background-color: var(--pink) !important;
 }
 
