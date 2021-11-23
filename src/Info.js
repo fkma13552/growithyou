@@ -24,7 +24,7 @@ function Info() {
                                     <div className="col-10 col-lg-12">
                                         <h1 className="text-white text-huge">
                                             {t("index.title")}
-                                            <h1 className={"text-white text-medium"}>Обмінюйте необмежену кількість разів, а сплачуйте щомісяця</h1>
+                                            <h1 className={"text-white text-medium"}>{t("index.undertitle")}</h1>
                                         </h1>
                                     </div>
                                     <div className="col-2 yellow-star my-auto">

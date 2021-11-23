@@ -13,6 +13,7 @@
 
     "index": {
         "title": "Підписка на оренду дитячих іграшок",
+        "undertitle":"Обмінюйте необмежену кількість разів, а сплачуйте щомісяця",
         "linkPlans": "https://growithyou.club/#plans",
         "mainButtons": {
             "sub": "ПІДПИСАТИСЬ",
