@@ -11,6 +11,7 @@ import ScrollToTop from './ScrollToTop';
 import GiftCards from "./GiftCards";
 import Shipping from "./Shipping";
 import Privacy from "./Privacy";
+import DiscountPopUp from "./DiscountPopUp";
 import {useState, useEffect} from 'react';
 import {BrowserRouter as Router, Switch, Route, useLocation} from 'react-router-dom'
 import myFunc from "./jsfront";
@@ -38,18 +39,20 @@ function App() {
 
   const domain = document.domain;
   const [location, setLocation] = useState(useLocation().pathname);
-
   const [compName, setCompName] = useState('index');
+
   useEffect(() => {
     myFunc();
     if (domain === "en.growithyou.club"){
       i18n.changeLanguage('en');
     }
   });
-
   return (
     <>
       <Header compName ={compName} changeCompName={() => setCompName} />
+      {
+        domain === "en.growithyou.club" && <DiscountPopUp />
+      }
 
         <Switch>
           <Route exact path={'/'}>

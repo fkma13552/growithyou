@@ -22,8 +22,8 @@
         "howItWorks": {
             "title": "How it works?",
             "desc1": "Choose the subscription plan and toys for your kid",
-            "desc2": "Play as long as needed, then return to us",
-            "desc3": "And all over again"
+            "desc2": "Pay monthly and use toys as long as needed",
+            "desc3": "Swap them for something else"
         },
 
         "plans": {
@@ -32,15 +32,15 @@
             "toysPlur2": "toys",
             "plan1": {
                 "desc": "Curious Einstein - one hundred new discoveries",
-                "price": "15$"
+                "price": "50$"
             },
             "plan2": {
                 "desc": "Inventive Tesla - a thousand happy moments",
-                "price": "25$"
+                "price": "75$"
             },
             "plan3": {
                 "desc": "Courageous Musk - a million conquered planets",
-                "price": "35$"
+                "price": "100$"
             }
         },
 

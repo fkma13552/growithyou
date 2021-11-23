@@ -1,0 +1,104 @@
+.pop-up-container {
+    position: fixed;
+    top: 50%;
+    bottom: 10px;
+    left:  5%;
+    right: 5%;
+    transition: top 1s;
+}
+
+.pop-up-container-hide {
+    transition: top 1s;
+    position: absolute;
+    top: -1000px;
+    left:  5%;
+    right: 5%;
+}
+
+.pop-up {
+    border-radius: var(--radius) var(--radius) 0 0;
+    padding: 1.5rem .5rem;
+    background-color: var(--lavender);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.pop-up p {
+    margin-top: 1rem;
+}
+
+.pop-up-input {
+    margin-top:  1rem;
+
+}
+
+.pop-up-input input {
+    padding: .75rem 2rem;
+    min-width: 50%;
+    border: 2px white solid;
+    padding-right: 70px;
+    border-radius: var(--radius);
+}
+
+.pop-up-input input:focus {
+    border: 2px var(--red) solid;
+    outline: none;
+}
+
+.pop-up-input button {
+    padding: .75rem 4rem;
+    margin-left: -55px;
+    border: 2px var(--red) solid;
+    color: white;
+    background-color: var(--red);
+    border-radius: var(--radius);
+}
+
+@media screen and (max-width: 800px) {
+    .pop-up-container {
+        position: fixed;
+        top: 40%;
+        transition: top 1s;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .pop-up-container {
+        position: fixed;
+        top: 10%;
+        transition: top 1s;
+    }
+
+    .pop-up-input input {
+        padding: .75rem 2rem;
+        min-width: 50%;
+        max-width: 75%;
+        /*border: 2px white solid;*/
+        /*padding-right: 0;*/
+        display: inline-block;
+        /*border-radius: var(--radius);*/
+    }
+
+    /*	.pop-up-input input:focus {
+            border: 2px var(--red) solid;
+            outline: none;
+        }*/
+
+    .pop-up-input button {
+        margin-top: .75rem;
+        padding: .75rem 1rem;
+        margin-left: 0;
+        width: 50%;
+        display: inline-block;
+        /*border: 2px var(--red) solid;*/
+        /*color: white;*/
+        /*background-color: var(--red);*/
+        /*border-radius: var(--radius);*/
+    }
+}
+
+.pop-up-close {
+    float: right;
+    margin-right: 1rem;
+}
