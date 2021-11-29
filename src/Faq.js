@@ -116,23 +116,26 @@ function Faq({location}) {
                                     </div>
                                 </div>
                                 <div className="col-lg-6 col-12 order-1 order-lg-2 text-right text-sm-center py-5">
-                                    <div className="social-icons">
+                                    <div className="social-icons px-2">
                                         <a href="https://www.instagram.com/growwith__you">
-					    <img src="img/inst.svg" alt="" />
-					</a>
-					<a href="https://www.facebook.com/growithyou.official">
-					    <img src="img/fb.svg" alt="" />
-					</a>
+                                            <img src="img/inst.svg" alt=""/>
+                                        </a>
+                                        <a href="https://www.facebook.com/growithyou.official">
+                                            <img src="img/fb.svg" alt=""/>
+                                        </a>
                                     </div>
-                                    <div className="contacts text-white py-3">
-                                        <p><a className="text-white" href="tel:+380668203974">{t("footer.tel")}</a></p>
-                                        <p><a className="text-white" href="mailto:growwithyou.subscription@gmail.com">{t("footer.mail")}</a></p>
+                                    <div className="contacts text-white p-3">
+                                        <p>+380990675541</p>
+                                        <p>growwithyou.subscription@gmail.com</p>
+                                        <p>
+                                            <Link to={'/about'}><a href="" className="text-white">Про нас</a></Link>
+                                        </p>
                                     </div>
-                                    <div className="col-md-4 col-12">
-                                        <div className="links d-inline-block text-center py-2">
-                                            <Link to={'/shipping'}><a href="" className="text-white px-3">{t("footer.shipping")}</a></Link>
-                                            <Link to={'/privacy'}><a href="" className="text-white px-3">{t("footer.privacy")}</a></Link>
-                                        </div>
+                                    <div className="links d-inline-block text-center py-2">
+                                        <Link to={'/shipping'}><a href="" className="text-white px-3">Доставка і
+                                            оплата</a></Link>
+                                        <Link to={'/privacy'}><a href="" className="text-white px-3">Політика
+                                            конфіденційності</a></Link>
                                     </div>
                                 </div>
                             </div>

@@ -274,6 +274,9 @@ function GiftCards() {
                         <div class="contacts text-white p-3">
                             <p>+380990675541</p>
                             <p>growwithyou.subscription@gmail.com</p>
+                            <p>
+                                <Link to={'/about'}><a href="" className="text-white">Про нас</a></Link>
+                            </p>
                         </div>
                         <div class="links d-inline-block text-center py-2">
                             <Link to={'/shipping'}><a href="" className="text-white px-3">Доставка і оплата</a></Link>

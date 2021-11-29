@@ -34,7 +34,7 @@ function Info() {
                                 <div className="text-sm-center">
                                     <div className="py-4 buttons">
                                         <a href={t("index.linkPlans")}><button className="btn btn-filled-white font-weight-bold">{t("index.mainButtons.sub")}</button></a>
-                                        <Link to={'/givetoys'}><button className="btn btn-outlined-pink font-weight-bold">{t("index.mainButtons.give")}</button></Link>
+                                        <a href={'https://t.me/GWY_bot'}><button className="btn btn-outlined-pink font-weight-bold">{t("index.mainButtons.personal")}</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -296,7 +296,7 @@ function Info() {
                             <div className="text-sm-center">
                                 <div className="py-5 buttons">
                                     <a href={t("index.linkPlans")}><button className="btn btn-filled-purple font-weight-bold">{t("footer.sub")}</button></a>
-                                    <Link to={'/givetoys'}><button className="btn btn-outlined-pink font-weight-bold">{t("footer.give")}</button></Link>
+                                    <a href={'https://www.t.me/GWY_bot'}><button className="btn btn-outlined-pink font-weight-bold">{t("footer.personal")}</button></a>
                                 </div>
                             </div>
                         </div>
@@ -324,6 +324,9 @@ function Info() {
 
                                 <p>
                                     <a href="mailto:growwithyou.subscription@gmail.com" className="text-white">{t("footer.mail")}</a>
+                                </p>
+                                <p className={"py-3"}>
+                                    <Link to={'/about'}><a href="" className="text-white">{t("footer.about")}</a></Link>
                                 </p>
 
                             <div className="h-3 bg-purple"></div>

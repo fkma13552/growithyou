@@ -100,7 +100,7 @@ function Header() {
                                     </li>
                                 }
                                 <li className={headerWhite? 'nav-link-purple': 'nav-link'}>
-                                    <Link to={'/about'} onClick={() => handleRoutingNavbar()}><a href="">{t("navbar.about")}</a></Link>
+                                    <Link to={'/givetoys'} onClick={() => handleRoutingNavbar()}><a href="">{t("navbar.give")}</a></Link>
                                 </li>
                                 <li className={headerWhite ? 'nav-link-purple': 'nav-link'}>
                                     <Link to={'/faq'} onClick={()=>handleRoutingNavbar()}><a href="">{t("navbar.questions")}</a></Link>
@@ -134,7 +134,7 @@ function Header() {
                                 </li>
                             }
                             <li>
-                                <Link to={'/about'}><a href="">{t("navbar.about")}</a></Link>
+                                <Link to={'/givetoys'}><a href="">{t("navbar.give")}</a></Link>
                             </li>
                             <li>
                                 <Link to={'/faq'} onClick={() => handleRoutingNavbar()}><a href="">{t("navbar.questions")}</a></Link>
@@ -180,7 +180,7 @@ function Header() {
                                     </li>
                                 }
                                 <li className={headerWhite? 'nav-link-purple': 'nav-link'}>
-                                    <Link to={'/about'} onClick={() => handleRoutingNavbar()}><a href="">{t("navbar.about")}</a></Link>
+                                    <Link to={'/givetoys'} onClick={() => handleRoutingNavbar()}><a href="">{t("navbar.give")}</a></Link>
                                 </li>
                                 <li className={headerWhite ? 'nav-link-purple': 'nav-link'}>
                                     <Link to={'/faq'} onClick={()=>handleRoutingNavbar()}><a href="">{t("navbar.questions")}</a></Link>
@@ -214,7 +214,7 @@ function Header() {
                                 </li>
                             }
                             <li>
-                                <Link to={'/about'}><a href="">{t("navbar.about")}</a></Link>
+                                <Link to={'/givetoys'}><a href="">{t("navbar.give")}</a></Link>
                             </li>
                             <li>
                                 <Link to={'/faq'} onClick={() => handleRoutingNavbarMini()}><a href="">{t("navbar.questions")}</a></Link>

@@ -7,7 +7,8 @@
         "close": "Close",
         "menu": "Menu",
         "mainpage": "Main page",
-        "cart": "Cart"
+        "cart": "Cart",
+        "give": "Give toys"
     },
 
     "index": {
@@ -15,7 +16,7 @@
         "linkPlans": "https://en.growithyou.club/#plans",
         "mainButtons": {
             "sub": "SUBSCRIBE",
-            "give": "GIVE AWAY TOYS",
+            "personal": "PERSONALIZED SELECTION",
             "findMore": "LEARN MORE"
         },
 
@@ -31,15 +32,15 @@
             "toysPlur1": "toys",
             "toysPlur2": "toys",
             "plan1": {
-                "desc": "Curious Einstein - one hundred new discoveries",
+                "desc": "Value of toys - $55",
                 "price": "50$"
             },
             "plan2": {
-                "desc": "Inventive Tesla - a thousand happy moments",
+                "desc": "Value of toys - $93",
                 "price": "75$"
             },
             "plan3": {
-                "desc": "Courageous Musk - a million conquered planets",
+                "desc": "Value of toys - $130",
                 "price": "100$"
             }
         },
@@ -155,7 +156,8 @@
         "tel": "+380990675541",
         "mail": "growwithyou.subscription@gmail.com",
         "privacy": "Privacy policy",
-        "shipping": "Shipping policy"
+        "shipping": "Shipping policy",
+        "about": "About us"
     }
 
 }
