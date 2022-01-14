@@ -34,15 +34,15 @@
             "toysPlur2": "toys",
             "plan1": {
                 "desc": "Value of toys - $55",
-                "price": "50$"
+                "price": "18$"
             },
             "plan2": {
                 "desc": "Value of toys - $93",
-                "price": "75$"
+                "price": "25$"
             },
             "plan3": {
                 "desc": "Value of toys - $130",
-                "price": "100$"
+                "price": "33$"
             }
         },
 
