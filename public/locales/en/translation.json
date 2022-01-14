@@ -13,6 +13,7 @@
 
     "index": {
         "title": "Monthly kids toys subscription",
+        "undertitle": "Unlimited swapping and monthly payment",
         "linkPlans": "https://en.growithyou.club/#plans",
         "mainButtons": {
             "sub": "SUBSCRIBE",
