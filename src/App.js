@@ -43,7 +43,7 @@ function App() {
 
   useEffect(() => {
     myFunc();
-    if (domain === "en.growithyou.club"){
+    if (domain === "en.growwithyou.club"){
       i18n.changeLanguage('en');
     }
   });
@@ -51,7 +51,7 @@ function App() {
     <>
       <Header compName ={compName} changeCompName={() => setCompName} />
       {
-        domain === "en.growithyou.club" && <DiscountPopUp />
+        domain === "en.growwithyou.club" && <DiscountPopUp />
       }
 
         <Switch>
